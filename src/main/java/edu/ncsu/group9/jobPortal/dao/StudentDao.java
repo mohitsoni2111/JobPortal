@@ -1,12 +1,14 @@
 package edu.ncsu.group9.jobPortal.dao;
 
 import edu.ncsu.group9.jobPortal.model.Student;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Log4j2
 @Service
 public class StudentDao {
 
@@ -32,7 +34,7 @@ public class StudentDao {
         } catch (Exception exception) {
             exception.printStackTrace();
         }
-        System.out.println(rows + " row(s) inserted into the Student Table");
+        log.info("{} rows inserted in the Student Record", rows);
         return rows;
     }
 
