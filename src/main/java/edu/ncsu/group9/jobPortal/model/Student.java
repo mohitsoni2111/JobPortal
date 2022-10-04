@@ -1,51 +1,80 @@
 package edu.ncsu.group9.jobPortal.model;
 
 public class Student {
-    private String studentId;
-    private String studentName;
-    private String studentEmail;
 
-    public Student(String studentId, String studentName, String studentEmail) {
-        this.studentId = studentId;
-        this.studentName = studentName;
-        this.studentEmail = studentEmail;
-    }
+    String studentId;
+    String password;
+    String firstName;
+    String lastName;
+    String emailId;
+    String degree;
+    String course;
+    String phoneNumber;
 
-    public Student() {
+    public Student() {}
 
+    public String getStudentId() {
+        return studentId;
     }
 
     public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
 
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
+    public String getPassword() {
+        return password;
     }
 
-    public void setStudentEmail(String studentEmail) {
-        this.studentEmail = studentEmail;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getStudentId() {
-        return studentId;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getStudentName() {
-        return studentName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getStudentEmail() {
-        return studentEmail;
+    public String getLastName() {
+        return lastName;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "studentId='" + studentId + '\'' +
-                ", studentName='" + studentName + '\'' +
-                ", studentEmail='" + studentEmail + '\'' +
-                '}';
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+    public String getDegree() {
+        return degree;
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
 }
