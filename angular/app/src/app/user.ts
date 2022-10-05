@@ -1,6 +1,6 @@
 export class User{
     constructor(
-        email:string,
-        password:string
+        userId: string,
+        userPassword: string
     ){}
 }

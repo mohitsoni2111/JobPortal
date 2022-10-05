@@ -11,10 +11,10 @@ public class Student {
     @NotNull(message = "Password is mandatory")
     String password;
     @NotNull(message = "firstName is mandatory")
-    @Size(min=1, max=16)
+    @Size(min = 1, max = 16)
     String firstName;
     @NotNull(message = "lastName is mandatory")
-    @Size(min=1, max=16)
+    @Size(min = 1, max = 16)
     String lastName;
     @Email(message = "Email should be valid")
     String emailId;
@@ -25,7 +25,8 @@ public class Student {
     @NotNull(message = "phoneNumber is mandatory")
     String phoneNumber;
 
-    public Student() {}
+    public Student() {
+    }
 
     public String getStudentId() {
         return studentId;

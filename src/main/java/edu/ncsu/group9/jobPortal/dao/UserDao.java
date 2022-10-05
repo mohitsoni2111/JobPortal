@@ -13,10 +13,14 @@ import java.util.Objects;
 @Log4j2
 @Service
 public class UserDao {
+
     @Autowired
     JdbcTemplate jdbcTemplate;
 
     public static final String CHECK_USER_SQL = "SELECT userId, userPassword FROM JOBPORTAL.USER WHERE USERID=?";
+
+    public static final String INSERT_USER_SQL = "INSERT INTO JOBPORTAL.USER VALUES (?, ?);";
+
     public static final String SUCCESSFUL = "LOGIN SUCCESSFUL";
     public static final String UNSUCCESSFUL = "LOGIN UNSUCCESSFUL";
 
@@ -33,4 +37,17 @@ public class UserDao {
         }
         return UNSUCCESSFUL;
     }
+
+    public int insertUser(Student student) {
+        int rows = 0;
+        try {
+            rows = jdbcTemplate.update(INSERT_USER_SQL, student.getEmailId(), student.getPassword());
+            log.info("Inserted {} row(s) in the User Table", rows);
+        } catch (Exception exception) {
+            log.info("Exception occurred while inserting into the User table. Exception -> ");
+            exception.printStackTrace();
+        }
+        return rows;
+    }
+
 }

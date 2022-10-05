@@ -34,7 +34,7 @@ public class StudentDao {
         } catch (Exception exception) {
             exception.printStackTrace();
         }
-        log.info("{} rows inserted in the Student Record", rows);
+        log.info("{} rows inserted in the Student Table", rows);
         return rows;
     }
 

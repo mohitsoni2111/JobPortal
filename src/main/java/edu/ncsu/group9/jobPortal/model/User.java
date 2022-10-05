@@ -1,13 +1,9 @@
 package edu.ncsu.group9.jobPortal.model;
 
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
-
 public class User {
 
-    @Id
     String userId;
-    @NotNull(message = "Password is mandatory")
+
     String userPassword;
 
     public User() {}
