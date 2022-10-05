@@ -1,14 +1,15 @@
 package util;
 
-import edu.ncsu.group9.jobPortal.model.Student;
-
-import java.util.Random;
-import java.util.UUID;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Util {
 
-    public static String generateStudentId(Student student) {
-        return UUID.fromString(student.getFirstName()+student.getLastName()).toString();
+    public static String getYYYYMMDDDate() {
+        LocalDate dateObj = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String date = dateObj.format(formatter);
+        return date;
     }
 
 }
