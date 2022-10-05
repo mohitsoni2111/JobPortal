@@ -1,29 +1,29 @@
 export class NewUser {
-    studentid: string;
-    firstname: string;
-    lastname: string;
+    studentId: string;
+    firstName: string;
+    lastName: string;
+    emailId: string;
     password: string;
-    emailid: string;
     degree: string;
     course: string;
-    phone: string;
+    phoneNumber: string;
     constructor(
-        studentid: string,
-        firstname: string,
-        lastname: string,
+        studentId: string,
+        firstName: string,
+        lastName: string,
+        emailId: string,
         password: string,
-        emailid: string,
         degree: string,
         course: string,
-        phone: string
+        phoneNumber: string
     ) {
-        this.studentid = studentid;
-        this.firstname = firstname;
-        this.lastname = lastname;
+        this.studentId = studentId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.emailId = emailId;
         this.password = password;
-        this.emailid = emailid;
         this.degree = degree;
         this.course = course;
-        this.phone = phone;
+        this.phoneNumber = phoneNumber;
     }
 }

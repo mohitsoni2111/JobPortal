@@ -7,11 +7,12 @@ import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LoginService } from './services/login.service';
+import { SignupService } from './services/signup.service';
 
 @NgModule({
     declarations: [AppComponent, LoginComponent, SignupComponent],
     imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-    providers: [LoginService],
+    providers: [LoginService, SignupService],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
