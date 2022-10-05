@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SignupService } from '../services/signup.service';
+import { NewUser } from './newuser';
 
 @Component({
     selector: 'app-signup',
@@ -6,7 +8,44 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./signup.component.css'],
 })
 export class SignupComponent implements OnInit {
-    constructor() {}
+    message: any;
+    studentId: string;
+    firstName: string;
+    lastName: string;
+    emailId: string;
+    password: string;
+    degree: string;
+    course: string;
+    phoneNumber: string;
+    constructor(private service: SignupService) {
+        this.message = '';
+        this.studentId = '';
+        this.firstName = '';
+        this.lastName = '';
+        this.emailId = '';
+        this.password = '';
+        this.degree = '';
+        this.course = '';
+        this.phoneNumber = '';
+    }
 
     ngOnInit(): void {}
+
+    public signupNow() {
+        let newuser: NewUser = new NewUser(
+            this.studentId,
+            this.firstName,
+            this.lastName,
+            this.emailId,
+            this.password,
+            this.degree,
+            this.course,
+            this.phoneNumber
+        );
+
+        let resp = this.service.signup(newuser);
+        resp.subscribe((data) => {
+            this.message = data;
+        });
+    }
 }
