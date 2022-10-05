@@ -14,7 +14,7 @@ public class CompanyDao {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    public static final String INSERT_COMPANY_SQL = "INSERT INTO JOBPORTAL.DASHBOARD VALUES (?, ?, ?, ?, ?, ?);";
+    public static final String INSERT_COMPANY_SQL = "INSERT INTO JOBPORTAL.DASHBOARD(companyName, jobType, profileDescription, streamType, jobUrl, validity) VALUES (?, ?, ?, ?, ?, ?);";
 
     public int insertCompanyDetails(CompanyInfo companyInfo) {
         int rows = 0;
@@ -28,6 +28,7 @@ public class CompanyDao {
                     companyInfo.getValidity()
             );
         } catch (Exception exception) {
+            log.error("Error Occurred while inserting record in the user table. Exception -> ");
             exception.printStackTrace();
         }
         log.info("{} rows inserted in the Company Record", rows);
