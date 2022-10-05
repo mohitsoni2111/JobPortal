@@ -4,6 +4,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 public class CompanyInfo {
+
     @Id
     private int companyId;
     @NotNull(message = "companyName is mandatory")

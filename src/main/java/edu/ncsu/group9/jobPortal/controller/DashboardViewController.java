@@ -1,12 +1,12 @@
 package edu.ncsu.group9.jobPortal.controller;
 
 import edu.ncsu.group9.jobPortal.model.CompanyInfo;
-import edu.ncsu.group9.jobPortal.model.Student;
 import edu.ncsu.group9.jobPortal.service.DashboardService;
-import edu.ncsu.group9.jobPortal.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -14,13 +14,11 @@ import org.springframework.web.bind.annotation.*;
 public class DashboardViewController {
 
     @Autowired
-    StudentService studentService;
-
-    @Autowired
     DashboardService dashboardService;
 
-    public void getStudentDashboardInfo() {
-
+    @GetMapping("/get/all")
+    public List<CompanyInfo> getStudentDashboardInfo() {
+        return dashboardService.getAllNonExpiredCompanyList();
     }
 
     @PostMapping(path = "/add", consumes = MediaType.APPLICATION_JSON_VALUE)
