@@ -17,6 +17,9 @@ public class UserDao {
     JdbcTemplate jdbcTemplate;
 
     public static final String CHECK_USER_SQL = "SELECT userId, userPassword FROM JOBPORTAL.USER WHERE USERID=?";
+
+    public static final String INSERT_USER_SQL = "INSERT INTO JOBPORTAL.USER VALUES (?, ?);";
+
     public static final String SUCCESSFUL = "LOGIN SUCCESSFUL";
     public static final String UNSUCCESSFUL = "LOGIN UNSUCCESSFUL";
 
@@ -33,4 +36,17 @@ public class UserDao {
         }
         return UNSUCCESSFUL;
     }
+
+    public int addUser(Student student) {
+        int rows = 0;
+        try {
+            rows = jdbcTemplate.update(INSERT_USER_SQL, student.getEmailId(), student.getPassword());
+            log.info("Inserted {} rows(s) into the User Table");
+        } catch (Exception exception) {
+            log.error("Error Occurred while inserting record in the user table. Exception -> ");
+            exception.printStackTrace();
+        }
+        return rows;
+    }
+
 }
