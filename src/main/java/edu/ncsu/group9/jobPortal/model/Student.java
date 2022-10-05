@@ -1,14 +1,28 @@
 package edu.ncsu.group9.jobPortal.model;
 
-public class Student {
+import javax.persistence.Id;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+public class Student {
+    @Id
     String studentId;
+    @NotNull(message = "Password is mandatory")
     String password;
+    @NotNull(message = "firstName is mandatory")
+    @Size(min=1, max=16)
     String firstName;
+    @NotNull(message = "lastName is mandatory")
+    @Size(min=1, max=16)
     String lastName;
+    @Email(message = "Email should be valid")
     String emailId;
+    @NotNull(message = "degree is mandatory")
     String degree;
+    @NotNull(message = "course is mandatory")
     String course;
+    @NotNull(message = "phoneNumber is mandatory")
     String phoneNumber;
 
     public Student() {}
