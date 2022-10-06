@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SignupService } from '../services/signup.service';
 import { NewUser } from './newuser';
 
@@ -17,7 +18,7 @@ export class SignupComponent implements OnInit {
     degree: string;
     course: string;
     phoneNumber: string;
-    constructor(private service: SignupService) {
+    constructor(private service: SignupService, private router: Router) {
         this.message = '';
         this.studentId = '';
         this.firstName = '';
@@ -46,6 +47,7 @@ export class SignupComponent implements OnInit {
         let resp = this.service.signup(newuser);
         resp.subscribe((data) => {
             this.message = data;
+            this.router.navigate(['login'])
         });
     }
 }
