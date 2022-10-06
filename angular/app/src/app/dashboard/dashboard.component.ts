@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import DashboardService from '../services/dashboard.service';
 
 @Component({
@@ -8,12 +9,16 @@ import DashboardService from '../services/dashboard.service';
 })
 export class DashboardComponent implements OnInit {
     companies: any;
-    constructor(private service: DashboardService) {}
+    constructor(private service: DashboardService, private router: Router) {}
 
     ngOnInit(): void {
         let resp = this.service.getCompanies();
         resp.subscribe((data) => {
             this.companies = data;
         });
+    }
+
+    redirectAddNewJob(){
+        this.router.navigate(['jobs']);
     }
 }

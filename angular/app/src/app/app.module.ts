@@ -9,9 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { LoginService } from './services/login.service';
 import { SignupService } from './services/signup.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 @NgModule({
-    declarations: [AppComponent, LoginComponent, SignupComponent, DashboardComponent],
+    declarations: [AppComponent, LoginComponent, SignupComponent, DashboardComponent, JobsComponent],
     imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
     providers: [LoginService, SignupService],
     bootstrap: [AppComponent],
