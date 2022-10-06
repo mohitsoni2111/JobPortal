@@ -14,7 +14,7 @@ public class UserController {
     UserService userService;
 
     @PostMapping(path = "/login", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public String userUserLogin(@RequestBody User user) {
+    public String checkUserCredentials(@RequestBody User user) {
         return userService.checkUser(user);
     }
 }
