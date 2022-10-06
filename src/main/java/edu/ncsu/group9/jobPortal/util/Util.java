@@ -1,4 +1,4 @@
-package util;
+package edu.ncsu.group9.jobPortal.util;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
