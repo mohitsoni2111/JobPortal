@@ -8,7 +8,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.stereotype.Service;
-import util.Util;
+import edu.ncsu.group9.jobPortal.util.Util;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -24,10 +24,14 @@ public class CompanyDao {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+    public CompanyDao(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
     public int insertCompanyDetails(CompanyInfo companyInfo) {
         int rows = 0;
         try {
-            rows = jdbcTemplate.update(INSERT_COMPANY_SQL, companyInfo.getCompanyName(), companyInfo.getJobType(), companyInfo.getProfileDescription(), companyInfo.getStreamType(), companyInfo.getJobUrl(), companyInfo.getValidity());
+            rows = jdbcTemplate.update(INSERT_COMPANY_SQL, new Object[]{companyInfo.getCompanyName(), companyInfo.getJobType(), companyInfo.getProfileDescription(), companyInfo.getStreamType(), companyInfo.getJobUrl(), companyInfo.getValidity()});
         } catch (Exception exception) {
             log.error("Error Occurred while inserting record in the user table. Exception -> ");
             exception.printStackTrace();
