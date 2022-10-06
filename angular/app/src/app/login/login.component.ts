@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginService } from '../services/login.service';
 import { User } from './user';
 
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit {
     message: any;
     userId: string;
     userPassword: string;
-    constructor(private service: LoginService) {
+    constructor(private service: LoginService, private router: Router) {
         this.message;
         this.userId = '';
         this.userPassword = '';
@@ -24,6 +25,11 @@ export class LoginComponent implements OnInit {
         let resp = this.service.login(user);
         resp.subscribe((data) => {
             this.message = data;
+            if(this.message  == 'LOGIN SUCCESSFUL')
+            {
+                this.router.navigate(['dashboard'])
+            }
+            // this.router.navigate(['companies'])
         });
     }
 }
