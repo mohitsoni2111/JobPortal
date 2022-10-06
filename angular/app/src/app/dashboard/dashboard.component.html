@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>JobPortal</title>
+
+        <!-- Bootstrap core CSS -->
+        <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+        <!-- Additional CSS Files -->
+
+        <link rel="stylesheet" href="dashboard.component.css" />
+        <!-- <link rel="stylesheet" href="fontawesome.css">
+    <link rel="stylesheet" href="owl.css"> -->
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"
+                        ><h2 class="text-center">
+                            JobPortal<em>Website</em> : Co-ordinator Dashboard
+                        </h2></a
+                    >
+                </div>
+            </nav>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Job Type</th>
+                    <th>Description</th>
+                    <th>Domain</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody class="tbl-accordion-header">
+                <tr *ngFor="let company of companies">
+                    <td>{{ company.companyName }}</td>
+                    <td>{{ company.jobType }}</td>
+                    <td>{{ company.profileDescription }}</td>
+                    <td>{{ company.streamType }}</td>
+                    <td>
+                        <a href="{{ company.jobUrl }}">{{ company.jobUrl }}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="inner-content">
+                            <p>Copyright © 2022 JobPortal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Additional Scripts -->
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/owl.js"></script>
+    </body>
+</html>
