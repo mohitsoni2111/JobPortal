@@ -8,10 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LoginService } from './services/login.service';
 import { SignupService } from './services/signup.service';
-import { UsersComponent } from './users/users.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-    declarations: [AppComponent, LoginComponent, SignupComponent, UsersComponent],
+    declarations: [AppComponent, LoginComponent, SignupComponent, DashboardComponent],
     imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
     providers: [LoginService, SignupService],
     bootstrap: [AppComponent],
