@@ -20,7 +20,7 @@ import java.util.List;
 public class CompanyDao {
 
     public static final String INSERT_COMPANY_SQL = "INSERT INTO JOBPORTAL.DASHBOARD(companyName, jobType, profileDescription, streamType, jobUrl, validity) VALUES (?, ?, ?, ?, ?, ?);";
-    public static final String GET_VALID_COMPANY_SQL = "SELECT * FROM JOBPORTAL.DASHBOARD WHERE VALIDITY <= ?";
+    public static final String GET_VALID_COMPANY_SQL = "SELECT * FROM JOBPORTAL.DASHBOARD WHERE VALIDITY >= ?";
     @Autowired
     JdbcTemplate jdbcTemplate;
 

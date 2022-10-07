@@ -25,7 +25,12 @@ export class LoginComponent implements OnInit {
         let resp = this.service.login(user);
         resp.subscribe((data) => {
             this.message = data;
-            if(this.message  == 'LOGIN SUCCESSFUL')
+            console.log(this.message);
+            if(this.message  == 'COORDINATOR LOGIN SUCCESSFUL')
+            {
+                this.router.navigate(['coordinatordashboard'])
+            }
+            if(this.message  == 'STUDENT LOGIN SUCCESSFUL')
             {
                 this.router.navigate(['dashboard'])
             }

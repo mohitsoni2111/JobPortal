@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 import DashboardService from '../services/dashboard.service';
 
 @Component({
-    selector: 'app-dashboard',
-    templateUrl: './dashboard.component.html',
-    styleUrls: ['./dashboard.component.css'],
+  selector: 'app-coordinatordashboard',
+  templateUrl: './coordinatordashboard.component.html',
+  styleUrls: ['./coordinatordashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
-    companies: any;
+export class CoordinatordashboardComponent implements OnInit {
+  companies: any;
     constructor(private service: DashboardService, private router: Router) {}
 
     ngOnInit(): void {
@@ -17,4 +17,10 @@ export class DashboardComponent implements OnInit {
             this.companies = data;
         });
     }
+
+    
+    redirectAddNewJob(){
+      this.router.navigate(['jobs']);
+  }
+  
 }
