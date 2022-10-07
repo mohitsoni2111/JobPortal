@@ -64,6 +64,7 @@ Clone the repository through the terminal
 Step 3:
 Download [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 Setup the Db connection with tables mentioned in the model directory
+
 Update resources -> application.properties with your db credentials.
 
 Step 4: 
