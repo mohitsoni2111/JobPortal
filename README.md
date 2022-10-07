@@ -66,7 +66,15 @@ Setup the Db connection with tables mentioned in the model directory
 Update resources -> application.properties with your db credentials.
 
 Step 4: 
+From Terminal go to folder:
 
+`cd angular/app`
+
+Step 5:
+Run commands to open the front-end of the application:
+
+`npm install`
+`ng serve --open`
 
 ## Documentation
 
@@ -103,5 +111,5 @@ Further details regarding the license can be found [here](https://github.com/moh
 - [Mohit Soni](https://github.com/mohitsoni2111)
 - [Tilak Satra](https://github.com/tilaksatra)
 - [Akshat Salva](https://github.com/akshat22)
-- [Madiha ?](https://github.com/madiha2001)
+- [Madiha Mansoori](https://github.com/madiha2001)
 - [Anagha Patil](https://github.com/Anagha-2000)
