@@ -53,8 +53,9 @@ Use [Java IDE](https://www.jetbrains.com/idea/)
 Step 2: 
 Clone the repository through the terminal
 
-`git clone https://github.com/mohitsoni2111/jobPortal.git`
-`cd jobPortal`
+git clone https://github.com/mohitsoni2111/jobPortal.git
+
+cd jobPortal
 
  (OR) Download the .zip file on your local machine
  
