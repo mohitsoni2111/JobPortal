@@ -7,7 +7,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -15,20 +14,17 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 public class DashboardViewControllerTest {
 
-    MockMvc mockMvc;
-
     private static final String COMPANY = "{\"firstname\": \"Tilak\",\"lastname\": \"Satra\",\"password\": \"bchjdfrfr\",\"emailid\": \"ayushsatra@ncsu.edu\",\"degree\": \"Masters\",\"course\": \"Computer Science\",\"phone\": \"9283833221\"}";
+
+    MockMvc mockMvc;
 
     @Mock
     DashboardService dashboardService;
@@ -49,8 +45,8 @@ public class DashboardViewControllerTest {
                 .andDo(print());
     }
 
-    @Test
-    public void addCompanyTest() throws Exception {
+//    @Test
+//    public void addCompanyTest() throws Exception {
 //        doNothing().when(dashboardService).addCompanyDetails(any(CompanyInfo.class));
 //        mockMvc.perform(post("/dashboard/add")
 //                        .accept(MediaType.APPLICATION_JSON)
@@ -58,7 +54,7 @@ public class DashboardViewControllerTest {
 //                        .content(COM)
 //                ).andExpect(status().isOk())
 //                .andDo(print());
-    }
+//    }
 
     public List<CompanyInfo> getCompanyList() {
         List<CompanyInfo> companyInfoList = new ArrayList<>();
