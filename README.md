@@ -37,7 +37,36 @@ Our application connects the recruiters and candidates.
 
 ## Getting Started
 
----
+#Installation Guide
+
+Step 1: 
+Install the following dependencies
+
+Install [Java](https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html) 
+
+Install [Node](https://nodejs.org/en/download/)
+
+Install [Angular cli](https://angular.io/cli)
+
+Use [Java IDE](https://www.jetbrains.com/idea/)
+
+Step 2: 
+Clone the repository through the terminal
+
+`git clone https://github.com/mohitsoni2111/jobPortal.git`
+`cd jobPortal`
+
+ (OR) Download the .zip file on your local machine
+ 
+ https://github.com/mohitsoni2111/jobPortal.git
+
+Step 3:
+Download [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+Setup the Db connection with tables mentioned in the model directory
+Update resources -> application.properties with your db credentials.
+
+Step 4: 
+
 
 ## Documentation
 
