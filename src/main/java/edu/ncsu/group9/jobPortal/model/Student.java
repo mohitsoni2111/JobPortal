@@ -1,27 +1,47 @@
 package edu.ncsu.group9.jobPortal.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.Id;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+@ApiModel(description = "Represent the Student Information required during registration")
 public class Student {
+
     @Id
+    @ApiModelProperty("Represents the unique student id")
     String studentId;
+
+    @ApiModelProperty("Represents the user's credentials")
     @NotNull(message = "Password is mandatory")
     String password;
+
+    @ApiModelProperty("Represents user's first name")
     @NotNull(message = "firstName is mandatory")
     @Size(min=1, max=16)
     String firstName;
+
+    @ApiModelProperty("Represents user's last name")
     @NotNull(message = "lastName is mandatory")
     @Size(min=1, max=16)
     String lastName;
+
+    @ApiModelProperty("Represents user's emailId")
     @Email(message = "Email should be valid")
     String emailId;
+
+    @ApiModelProperty("Represents user's degree in which he/she is enrolled in")
     @NotNull(message = "degree is mandatory")
     String degree;
+
+    @ApiModelProperty("Represents the course currently undertaken")
     @NotNull(message = "course is mandatory")
     String course;
+
+    @ApiModelProperty("Represents user's contact information")
     @NotNull(message = "phoneNumber is mandatory")
     String phoneNumber;
 

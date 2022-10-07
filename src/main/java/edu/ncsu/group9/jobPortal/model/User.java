@@ -1,12 +1,19 @@
 package edu.ncsu.group9.jobPortal.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+@ApiModel(description = "Represents a user i.e. Either a Student or a Recruiter")
 public class User {
 
     @Id
+    @ApiModelProperty("Represents emailId of the user")
     String userId;
+
+    @ApiModelProperty("Represents login password")
     @NotNull(message = "Password is mandatory")
     String userPassword;
 
