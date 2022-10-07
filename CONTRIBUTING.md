@@ -1,5 +1,5 @@
 # Welcome to *JobPortal* contributing guide
-* First of all, we would like to thank you for investing your time in contributing to our project [JobPortal](https://github.com/atharva1996/WolfJobs)
+* First of all, we would like to thank you for investing your time in contributing to our project [JobPortal](https://github.com/mohitsoni2111/jobPortal)
 
 * Before getting started, head over to [Code of Coduct](https://github.com/mohitsoni2111/jobPortal/blob/main/CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
