@@ -15,10 +15,11 @@ import java.util.Objects;
 @Log4j2
 @Service
 public class UserDao {
+
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    public static final String CHECK_USER_SQL = "SELECT userId, userPassword FROM JOBPORTAL.USER WHERE USERID=?";
+    public static final String CHECK_USER_SQL = "SELECT userId, userPassword, isStudent FROM JOBPORTAL.USER WHERE USERID=?";
 
     public static final String INSERT_USER_SQL = "INSERT INTO JOBPORTAL.USER VALUES (?, ?, ?)";
 
@@ -33,7 +34,7 @@ public class UserDao {
         try {
             fetchedUser = jdbcTemplate.queryForObject(CHECK_USER_SQL, new Object[] { userId }, new BeanPropertyRowMapper<>(UserDto.class));
             if (fetchedUser!=null && fetchedUser.getIsStudent() == 1)
-                checkStudentCredentials(user, fetchedUser);
+                return checkStudentCredentials(user, fetchedUser);
             return Objects.isNull(fetchedUser) ? UNSUCCESSFUL : (user.getUserPassword().equals(fetchedUser.getUserPassword())? COORDINATOR_LOGIN_SUCCESSFUL : UNSUCCESSFUL);
         } catch (EmptyResultDataAccessException exception) {
             log.warn("No user found with userId -> {}", user.getUserId());

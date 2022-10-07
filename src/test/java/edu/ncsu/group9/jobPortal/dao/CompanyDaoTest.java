@@ -70,5 +70,4 @@ public class CompanyDaoTest {
         return company;
     }
 
-
 }
