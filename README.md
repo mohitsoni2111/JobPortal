@@ -78,7 +78,9 @@ Run commands to open the front-end of the application:
     `npm install`
     `ng serve --open`
 
+---
 ##Development
+
 ### Development Specifications
 
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
