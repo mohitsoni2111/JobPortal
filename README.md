@@ -79,7 +79,8 @@ Run commands to open the front-end of the application:
     `ng serve --open`
 
 ---
-##Development
+
+## Documentation
 
 ### Development Specifications
 
