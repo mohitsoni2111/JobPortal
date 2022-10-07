@@ -27,6 +27,10 @@ export class LoginComponent implements OnInit {
             this.message = data;
             if(this.message  == 'LOGIN SUCCESSFUL')
             {
+                this.router.navigate(['coordinatordashboard'])
+            }
+            if(this.message  == 'USER LOGIN SUCCESSFUL')
+            {
                 this.router.navigate(['dashboard'])
             }
             // this.router.navigate(['companies'])
