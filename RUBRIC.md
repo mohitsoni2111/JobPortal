@@ -26,5 +26,9 @@
 |Chat channel: exists|3||
 |Test cases: a large proportion of the issues related to handling failing cases|2|https://github.com/mohitsoni2111/jobPortal/issues?q=is%3Aissue+is%3Aclosed|
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files|3||
+|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|||
+|Evidence that the whole team is using the same tools|3||
+|Evidence that the members of the team are working across multiple places in the code base|2||
+|Short release cycles|2|https://github.com/mohitsoni2111/jobPortal/releases|
 
 
