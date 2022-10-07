@@ -12,6 +12,7 @@ import org.springframework.jdbc.core.ResultSetExtractor;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -54,7 +55,7 @@ public class CompanyDaoTest {
 
     @Test
     public void insertCompanyDetailsTest() {
-        when(jdbcTemplate.update(anyString(), any(Object.class))).thenReturn(1);
+        when(jdbcTemplate.update(anyString(), Optional.ofNullable(any()))).thenReturn(1);
         int rows = testObj.insertCompanyDetails(getCompany());
         assertEquals(1, rows);
     }
