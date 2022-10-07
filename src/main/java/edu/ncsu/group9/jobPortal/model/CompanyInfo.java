@@ -1,23 +1,41 @@
 package edu.ncsu.group9.jobPortal.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+@ApiModel(description = "Represent company information")
 public class CompanyInfo {
 
     @Id
+    @ApiModelProperty("Represents a unique comapny Id")
     private int companyId;
+
     @NotNull(message = "companyName is mandatory")
+    @ApiModelProperty("Represents the company name")
     private String companyName;
+
+
     @NotNull(message = "jobType is mandatory")
+    @ApiModelProperty("Represents the Job Type")
     private String jobType;
+
+    @ApiModelProperty("Represents the job description")
     @NotNull(message = "profileDescription is mandatory")
     private String profileDescription;
+
     @NotNull(message = "streamType is mandatory")
+    @ApiModelProperty("Represents the stream for which the role is open")
     private String streamType;
+
     @NotNull(message = "jobUrl is mandatory")
+    @ApiModelProperty("Represents the application URL")
     private String jobUrl;
+
     @NotNull(message = "validity is mandatory")
+    @ApiModelProperty("Represents uptil when a job seeker can apply")
     private String validity;
 
     public CompanyInfo(int companyId, String companyName, String jobType, String profileDescription, String streamType, String jobUrl, String validity) {
