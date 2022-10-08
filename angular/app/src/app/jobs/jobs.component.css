@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+}
+
+nav {
+    background-color: #232323;
+    padding: 15px;
+}
+.background-header {
+    position: fixed;
+    background-color: #fff !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    float: left;
+    outline: none;
+}
+.navbar .navbar-brand h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 650;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0px 15px;
+}
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background: #4747ff;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+}
+
+#joblisting {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#formcontainer {
+    margin: auto;
+}
+
+.divider:after,
+.divider:before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.h-custom {
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+.lowermargin {
+    margin-bottom: 10px;
+}
+.uppermargin {
+    margin-top: 5px;
+}
+
+.jobsButton {
+    margin-right: 10px;
+}
