@@ -149,6 +149,9 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#logout" >logout</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
@@ -236,6 +239,43 @@
     <h3 id="methods">
         Methods
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/coordinatordashboard/coordinatordashboard.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -373,6 +413,10 @@ export class CoordinatordashboardComponent implements OnInit {
       this.router.navigate([&#x27;jobs&#x27;]);
   }
   
+  logout(){
+    this.router.navigate([&#x27;login&#x27;])
+
+}
 }
 </code></pre>
     </div>
@@ -396,29 +440,28 @@ export class CoordinatordashboardComponent implements OnInit {
 
         &lt;title&gt;JobPortal&lt;/title&gt;
 
-        &lt;!-- Bootstrap core CSS --&gt;
-        &lt;!-- &lt;link href&#x3D;&quot;vendor/bootstrap/css/bootstrap.min.css&quot; rel&#x3D;&quot;stylesheet&quot;&gt; --&gt;
-
-        &lt;!-- Additional CSS Files --&gt;
-
         &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;coordinatordashboard.component.css&quot; /&gt;
-        &lt;!-- &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;fontawesome.css&quot;&gt;
-    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;owl.css&quot;&gt; --&gt;
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;!-- Header --&gt;
-        &lt;header class&#x3D;&quot;&quot;&gt;
-            &lt;nav class&#x3D;&quot;navbar navbar-expand-lg&quot;&gt;
-                &lt;div class&#x3D;&quot;container&quot;&gt;
-                    &lt;a class&#x3D;&quot;navbar-brand&quot; href&#x3D;&quot;index.html&quot;
-                        &gt;&lt;h2 class&#x3D;&quot;text-center&quot;&gt;
-                            JobPortal&lt;em&gt;Website&lt;/em&gt; : Student Dashboard
-                        &lt;/h2&gt;&lt;/a
-                    &gt;
-                &lt;/div&gt;
-            &lt;/nav&gt;
-        &lt;/header&gt;
+        &lt;nav class&#x3D;&quot;navbar navbar-expand-lg justify-content-between&quot;&gt;
+            &lt;div class&#x3D;&quot;container&quot;&gt;
+                &lt;a class&#x3D;&quot;navbar-brand&quot;
+                    &gt;&lt;h2 class&#x3D;&quot;text-center&quot;&gt;
+                        JobPortal : Coordinator Dashboard
+                    &lt;/h2&gt;&lt;/a
+                &gt;
+            &lt;/div&gt;
+            &lt;button
+                class&#x3D;&quot;btn btn-light my-2 my-sm-0&quot;
+                type&#x3D;&quot;submit&quot;
+                (click)&#x3D;&quot;logout()&quot;
+            &gt;
+                Logout
+            &lt;/button&gt;
+        &lt;/nav&gt;
+
+        &lt;h2 id&#x3D;&quot;joblisting&quot;&gt;Job Listings&lt;/h2&gt;
 
         &lt;table&gt;
             &lt;thead&gt;
@@ -441,28 +484,15 @@ export class CoordinatordashboardComponent implements OnInit {
                     &lt;/td&gt;
                 &lt;/tr&gt;
             &lt;/tbody&gt;
-            &lt;button class&#x3D;&quot;btn btn-outline-success&quot; type&#x3D;&quot;submit&quot; (click)&#x3D;&quot;redirectAddNewJob()&quot;&gt;Add Job&lt;/button&gt;
+            &lt;button
+                class&#x3D;&quot;btn btn-outline-primary&quot;
+                type&#x3D;&quot;submit&quot;
+                (click)&#x3D;&quot;redirectAddNewJob()&quot;
+                id&#x3D;&quot;addjob&quot;
+            &gt;
+                Add Job
+            &lt;/button&gt;
         &lt;/table&gt;
-
-        &lt;!-- &lt;footer&gt;
-            &lt;div class&#x3D;&quot;container&quot;&gt;
-                &lt;div class&#x3D;&quot;row&quot;&gt;
-                    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
-                        &lt;div class&#x3D;&quot;inner-content&quot;&gt;
-                            &lt;p&gt;Copyright © 2022 JobPortal&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/footer&gt; --&gt;
-
-        &lt;!-- Bootstrap core JavaScript --&gt;
-        &lt;script src&#x3D;&quot;vendor/jquery/jquery.min.js&quot;&gt;&lt;/script&gt;
-        &lt;script src&#x3D;&quot;vendor/bootstrap/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
-
-        &lt;!-- Additional Scripts --&gt;
-        &lt;script src&#x3D;&quot;assets/js/custom.js&quot;&gt;&lt;/script&gt;
-        &lt;script src&#x3D;&quot;assets/js/owl.js&quot;&gt;&lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -475,201 +505,70 @@ export class CoordinatordashboardComponent implements OnInit {
                 <pre class="line-numbers"><code class="language-scss">body {
     font-family: &#x27;Poppins&#x27;, sans-serif;
     overflow-x: hidden;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  p {
-      margin-bottom: 0px;
-      font-size: 14px;
-      font-weight: 300;
-      color: #4a4a4a;
-      line-height: 24px;
-  }
-  a {
-      text-decoration: none!important;
-  }
-  ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-  }
-  
-  h1,h2,h3,h4,h5,h6 {
-      margin: 0px;
-  }
-  
-  
-  
-  /* Header Style */
-  header {
-      position: absolute;
-      z-index: 99999;
-      width: 100%;
-      height: 80px;
-      background-color: #232323;
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      -moz-transition: all 0.3s ease-in-out 0s;
-      -o-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-  }
-  header .navbar {
-      padding: 17px 0px;
-  }
-  .background-header .navbar {
-      padding: 17px 0px;
-  }
-  .background-header {
-      top: 0;
-      position: fixed;
-      background-color: #fff!important;
-      box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
-  }
-  .background-header .navbar-brand h2 {
-      color: #121212!important;
-  }
-  .background-header .navbar-nav a.nav-link {
-      color: #1e1e1e!important;
-  }
-  .background-header .navbar-nav .nav-link:hover,
-  .background-header .navbar-nav .active&gt;.nav-link,
-  .background-header .navbar-nav .nav-link.active,
-  .background-header .navbar-nav .nav-link.show,
-  .background-header .navbar-nav .show&gt;.nav-link {
-      color: #f33f3f!important;
-  }
-  
-  .navbar .navbar-brand {
-      float: 	left;
-      margin-top: -12px;
-      outline: none;
-  }
-  .navbar .navbar-brand h2 {
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 24px;
-      font-weight: 700;
-      -webkit-transition: all .3s ease 0s;
-      -moz-transition: all .3s ease 0s;
-      -o-transition: all .3s ease 0s;
-      transition: all .3s ease 0s;
-  }
-  .navbar .navbar-brand h2 em {
-      font-style: normal;
-      color: #f33f3f;
-  }
-  #navbarResponsive {
-      z-index: 999;
-  }
-  .navbar-collapse {
-      text-align: center;
-  }
-  .navbar .navbar-nav .nav-item {
-      margin: 0px 15px;
-  }
-  .navbar .navbar-nav a.nav-link {
-      text-transform: capitalize;
-      font-size: 15px;
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      color: #fff;
-      transition: all 0.5s;
-      margin-top: 5px;
-  }
-  .navbar .navbar-nav .nav-link:hover,
-  .navbar .navbar-nav .active&gt;.nav-link,
-  .navbar .navbar-nav .nav-link.active,
-  .navbar .navbar-nav .nav-link.show,
-  .navbar .navbar-nav .show&gt;.nav-link {
-      color: #fff;
-      padding-bottom: 25px;
-      border-bottom: 3px solid #f33f3f;
-  }
-  .navbar .navbar-toggler-icon {
-      background-image: none;
-  }
-  .navbar .navbar-toggler {
-      border-color: #fff;
-      background-color: #fff;	
-      height: 36px;
-      outline: none;
-      border-radius: 0px;
-      position: absolute;
-      right: 30px;
-      top: 20px;
-  }
-  .navbar .navbar-toggler-icon:after {
-      content: &#x27;\f0c9&#x27;;
-      color: #f33f3f;
-      font-size: 18px;
-      line-height: 26px;
-      font-family: &#x27;FontAwesome&#x27;;
-  }
-  
-  
-  
-  
-  
-  /* Footer */
-  
-  footer {
-      text-align: center;
-      
-  }
-  
-  footer .inner-content {
-      border-top: 1px solid #eee;
-      margin-top: 60px;
-      padding: 60px 0px;
-  }
-  
-  footer .inner-content p {
-      text-transform: uppercase;
-  }
-  
-  footer .inner-content p a {
-      color: #f33f3f;
-      margin-left: 3px;
-  }
-  
-  
-  
-  
-  
-    table { 
-      width: 1000px; 
-      border-collapse: collapse; 
-      margin:100px auto;
-      }
-  
-  th { 
-      background: #83459A; 
-      color: white; 
-      font-weight: bold; 
-      }
-  
-  td, th { 
-      padding: 10px; 
-      border: 1px solid #ccc;
-      text-align: center; 
-      font-size: 18px;
-      }
-  
-  .tbl-accordion-header a {
-      color: #28c76f !important;
-  }
-  
-  .tbl-accordion-body {
-      display: none;
-  }
-  
-  .tbl-accordion-body td {
-    border-bottom: 0px; 
-  }
-  
-  .tbl-accordion-body tr:last-child {
-    border: 1px solid #ccc; 
-  }</code></pre>
+}
+p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+}
+
+nav {
+    background-color: #232323;
+    padding: 15px;
+}
+.background-header {
+    position: fixed;
+    background-color: #fff !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    float: left;
+    outline: none;
+}
+.navbar .navbar-brand h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 650;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0px 15px;
+}
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background: #4747ff;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+}
+
+#joblisting {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#addjob {
+    margin-top: 10px;
+    position: absolute;
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -697,7 +596,7 @@ export class CoordinatordashboardComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!DOCTYPE html><html lang="en">    <head>        <meta charset="utf-8" />        <meta            name="viewport"            content="width=device-width, initial-scale=1, shrink-to-fit=no"        />        <meta name="description" content="" />        <meta name="author" content="" />        <link            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"            rel="stylesheet"        />        <title>JobPortal</title>        <!-- Bootstrap core CSS -->        <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->        <!-- Additional CSS Files -->        <link rel="stylesheet" href="coordinatordashboard.component.css" />        <!-- <link rel="stylesheet" href="fontawesome.css">    <link rel="stylesheet" href="owl.css"> -->    </head>    <body>        <!-- Header -->        <header class="">            <nav class="navbar navbar-expand-lg">                <div class="container">                    <a class="navbar-brand" href="index.html"                        ><h2 class="text-center">                            JobPortal<em>Website</em> : Student Dashboard                        </h2></a                    >                </div>            </nav>        </header>        <table>            <thead>                <tr>                    <th>Name</th>                    <th>Job Type</th>                    <th>Description</th>                    <th>Domain</th>                    <th>Link</th>                </tr>            </thead>            <tbody class="tbl-accordion-header">                <tr *ngFor="let company of companies">                    <td>{{ company.companyName }}</td>                    <td>{{ company.jobType }}</td>                    <td>{{ company.profileDescription }}</td>                    <td>{{ company.streamType }}</td>                    <td>                        <a href="{{ company.jobUrl }}">{{ company.jobUrl }}</a>                    </td>                </tr>            </tbody>            <button class="btn btn-outline-success" type="submit" (click)="redirectAddNewJob()">Add Job</button>        </table>        <!-- <footer>            <div class="container">                <div class="row">                    <div class="col-md-12">                        <div class="inner-content">                            <p>Copyright © 2022 JobPortal</p>                        </div>                    </div>                </div>            </div>        </footer> -->        <!-- Bootstrap core JavaScript -->        <script src="vendor/jquery/jquery.min.js"></script>        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>        <!-- Additional Scripts -->        <script src="assets/js/custom.js"></script>        <script src="assets/js/owl.js"></script>    </body></html></div>'
+        var COMPONENT_TEMPLATE = '<div><!DOCTYPE html><html lang="en">    <head>        <meta charset="utf-8" />        <meta            name="viewport"            content="width=device-width, initial-scale=1, shrink-to-fit=no"        />        <meta name="description" content="" />        <meta name="author" content="" />        <link            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"            rel="stylesheet"        />        <title>JobPortal</title>        <link rel="stylesheet" href="coordinatordashboard.component.css" />    </head>    <body>        <nav class="navbar navbar-expand-lg justify-content-between">            <div class="container">                <a class="navbar-brand"                    ><h2 class="text-center">                        JobPortal : Coordinator Dashboard                    </h2></a                >            </div>            <button                class="btn btn-light my-2 my-sm-0"                type="submit"                (click)="logout()"            >                Logout            </button>        </nav>        <h2 id="joblisting">Job Listings</h2>        <table>            <thead>                <tr>                    <th>Name</th>                    <th>Job Type</th>                    <th>Description</th>                    <th>Domain</th>                    <th>Link</th>                </tr>            </thead>            <tbody class="tbl-accordion-header">                <tr *ngFor="let company of companies">                    <td>{{ company.companyName }}</td>                    <td>{{ company.jobType }}</td>                    <td>{{ company.profileDescription }}</td>                    <td>{{ company.streamType }}</td>                    <td>                        <a href="{{ company.jobUrl }}">{{ company.jobUrl }}</a>                    </td>                </tr>            </tbody>            <button                class="btn btn-outline-primary"                type="submit"                (click)="redirectAddNewJob()"                id="addjob"            >                Add Job            </button>        </table>    </body></html></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CoordinatordashboardComponent', 'selector': 'app-coordinatordashboard'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'JobsComponent', 'selector': 'app-jobs'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'SignupComponent', 'selector': 'app-signup'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'CoordinatordashboardComponent'};
