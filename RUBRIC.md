@@ -30,5 +30,5 @@
 |Evidence that the whole team is using the same tools|3||
 |Evidence that the members of the team are working across multiple places in the code base|2||
 |Short release cycles|2|https://github.com/mohitsoni2111/jobPortal/releases|
-
+|Software Sustainability Evaluation|
 
