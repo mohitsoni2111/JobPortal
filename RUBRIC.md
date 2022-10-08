@@ -94,10 +94,10 @@
 |Do contributors keep the copyright/IP of their contributions?|Yes||
 |Does your website and documentation clearly state the copyright owners of your software and documentation?|Yes||
 |Does each of your source code files include a copyright statement?|No||
-|Does your website and documentation clearly state the licence of your software?|No||
-|Is your software released under an open source licence?|No||
-|Is your software released under an OSI-approved open-source licence?|Not Applicable||
-|Does each of your source code files include a licence header?|Not Applicable||
+|Does your website and documentation clearly state the licence of your software?|Yes||
+|Is your software released under an open source licence?|Yes||
+|Is your software released under an OSI-approved open-source licence?|Yes||
+|Does each of your source code files include a licence header?|Yes||
 |Do you have a recommended citation for your software?|No||
 |Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)?|Yes||
 |Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed?|No||
