@@ -52,25 +52,32 @@ Use [Java IDE](https://www.jetbrains.com/idea/)
 Step 2:
 Clone the repository through the terminal
 
-`git clone https://github.com/mohitsoni2111/jobPortal.git`
-`cd jobPortal`
+    git clone https://github.com/mohitsoni2111/jobPortal.git
 
-(OR) Download the .zip file on your local machine
+    cd jobPortal
 
-https://github.com/mohitsoni2111/jobPortal.git
+ (OR) Download the .zip file on your local machine
+ 
+    https://github.com/mohitsoni2111/jobPortal.git
 
 Step 3:
 Download [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 Setup the Db connection with tables mentioned in the model directory
+
 Update resources -> application.properties with your db credentials.
 
-Step 4:
+Step 4: 
+From Terminal go to folder:
 
-## Documentation
+    `cd angular/app`
 
----
+Step 5:
+Run commands to open the front-end of the application:
 
-### Development Specifications
+    `npm install`
+    `ng serve --open`
+
+## Development Specifications
 
 ![springBoot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
