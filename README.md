@@ -79,7 +79,11 @@ Run commands to open the front-end of the application:
     `npm install`
     `ng serve --open`
 
-## Development Specifications
+---
+
+## Documentation
+
+### Development Specifications
 
 ![springBoot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
