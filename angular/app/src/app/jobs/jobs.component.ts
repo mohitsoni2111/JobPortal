@@ -41,7 +41,7 @@ export class JobsComponent implements OnInit {
         let resp = this.service.addjob(newjob);
         resp.subscribe((data) => {
             this.message = data;
-            this.router.navigate(['dashboard']);
+            this.router.navigate(['coordinatordashboard']);
         });
     }
 
