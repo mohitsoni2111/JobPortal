@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,64 +46,132 @@
     </head>
     <body>
         <h1>Add New Jobs</h1>
-        <form>
+        
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>JobPortal</title>
+
+        <link rel="stylesheet" href="jobs.component.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg justify-content-between">
             <div class="container">
-                <label>Company Name: </label>
-                <input
-                    type="text"
-                    placeholder="Enter name of the company"
-                    [(ngModel)]="companyName"
-                    name="companyName"
-                    required
-                />
-                <label>Job Position: </label>
-                <input
-                    type="text"
-                    placeholder="Enter Job Position"
-                    [(ngModel)]="jobType"
-                    name="jobType"
-                    required
-                />
-                <label>Job Description: </label>
-                <input
-                    type="text"
-                    placeholder="Enter Job Description"
-                    [(ngModel)]="profileDescription"
-                    name="profileDescription"
-                    required
-                />
-                <label>Stream: </label>
-                <input
-                    type="text"
-                    placeholder="Enter Streams"
-                    [(ngModel)]="streamType"
-                    name="streamType"
-                    required
-                />
-                <label>Link: </label>
-                <input
-                    type="text"
-                    placeholder="Enter Job Link"
-                    [(ngModel)]="jobUrl"
-                    name="jobUrl"
-                    required
-                />
-                <label>Validity: </label>
-                <input
-                    type="date"
-                    placeholder="Enter Last Date of Application"
-                    [(ngModel)]="validity"
-                    name="validity"
-                    required
-                />
-                <input
-                    type="submit"
-                    name="create"
-                    value="Create"
-                    (click)="addJob()"
-                    
-                />
+                <a class="navbar-brand"
+                    ><h2 class="text-center">JobPortal : Coordinator Dashboard</h2></a
+                >
             </div>
-        </form>
+            <button
+                class="btn btn-light my-2 my-sm-0"
+                type="submit"
+                (click)="logout()"
+            >
+                Logout
+            </button>
+        </nav>
+
+        <div class="col-md-8 col-lg-6 col-xl-4" id="formcontainer">
+            <h2
+                style="
+                    text-align: center;
+                    color: #4747ff;
+                    margin-bottom: 25px;
+                    margin-top: 30px;
+                "
+            >
+                Add a New Job Listing
+            </h2>
+            <form class="justify-content-center">
+                <div class="container">
+                    <label>Company Name: </label>
+                    <input
+                        class="form-control form-control-sm lowermargin"
+                        type="text"
+                        placeholder="Enter name of the company"
+                        [(ngModel)]="companyName"
+                        name="companyName"
+                        required
+                    />
+                    <label>Job Position: </label>
+                    <input
+                        class="form-control form-control-sm lowermargin"
+                        type="text"
+                        placeholder="Enter Job Position"
+                        [(ngModel)]="jobType"
+                        name="jobType"
+                        required
+                    />
+                    <label>Job Description: </label>
+                    <input
+                        class="form-control form-control-sm lowermargin"
+                        type="text"
+                        placeholder="Enter Job Description"
+                        [(ngModel)]="profileDescription"
+                        name="profileDescription"
+                        required
+                    />
+                    <label>Stream: </label>
+                    <input
+                        class="form-control form-control-sm lowermargin"
+                        type="text"
+                        placeholder="Enter Streams"
+                        [(ngModel)]="streamType"
+                        name="streamType"
+                        required
+                    />
+                    <label>Link: </label>
+                    <input
+                        class="form-control form-control-sm lowermargin"
+                        type="text"
+                        placeholder="Enter Job Link"
+                        [(ngModel)]="jobUrl"
+                        name="jobUrl"
+                        required
+                    />
+                    <label>Validity: </label>
+                    <input
+                        class="form-control form-control-sm lowermargin"
+                        type="date"
+                        placeholder="Enter Last Date of Application"
+                        [(ngModel)]="validity"
+                        name="validity"
+                        required
+                    />
+
+                    <input
+                        class="btn btn-outline-secondary btn uppermargin jobsButton"
+                        type="submit"
+                        name="goback"
+                        value="Go Back"
+                        (click)="redirectCoordinatorDashboard()"
+                    />
+
+                    <input
+                        class="btn btn-outline-primary btn uppermargin jobsButton"
+                        type="submit"
+                        name="create"
+                        value="Create"
+                        (click)="addJob()"
+                    />
+                </div>
+            </form>
+        </div>
     </body>
 </html>

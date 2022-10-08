@@ -16,29 +16,28 @@
 
         <title>JobPortal</title>
 
-        <!-- Bootstrap core CSS -->
-        <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-
-        <!-- Additional CSS Files -->
-
         <link rel="stylesheet" href="coordinatordashboard.component.css" />
-        <!-- <link rel="stylesheet" href="fontawesome.css">
-    <link rel="stylesheet" href="owl.css"> -->
     </head>
 
     <body>
-        <!-- Header -->
-        <header class="">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html"
-                        ><h2 class="text-center">
-                            JobPortal<em>Website</em> : Student Dashboard
-                        </h2></a
-                    >
-                </div>
-            </nav>
-        </header>
+        <nav class="navbar navbar-expand-lg justify-content-between">
+            <div class="container">
+                <a class="navbar-brand"
+                    ><h2 class="text-center">
+                        JobPortal : Coordinator Dashboard
+                    </h2></a
+                >
+            </div>
+            <button
+                class="btn btn-light my-2 my-sm-0"
+                type="submit"
+                (click)="logout()"
+            >
+                Logout
+            </button>
+        </nav>
+
+        <h2 id="joblisting">Job Listings</h2>
 
         <table>
             <thead>
@@ -61,27 +60,14 @@
                     </td>
                 </tr>
             </tbody>
-            <button class="btn btn-outline-success" type="submit" (click)="redirectAddNewJob()">Add Job</button>
+            <button
+                class="btn btn-outline-primary"
+                type="submit"
+                (click)="redirectAddNewJob()"
+                id="addjob"
+            >
+                Add Job
+            </button>
         </table>
-
-        <!-- <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="inner-content">
-                            <p>Copyright © 2022 JobPortal</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
-
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Additional Scripts -->
-        <script src="assets/js/custom.js"></script>
-        <script src="assets/js/owl.js"></script>
     </body>
 </html>

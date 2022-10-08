@@ -29,19 +29,28 @@ export class JobsComponent implements OnInit {
     ngOnInit(): void {}
 
     public addJob() {
-      let newjob: Job = new Job(
-        this.companyName,
-        this.jobType,
-        this.profileDescription,
-        this.streamType,
-        this.jobUrl,
-        this.validity
-      );
+        let newjob: Job = new Job(
+            this.companyName,
+            this.jobType,
+            this.profileDescription,
+            this.streamType,
+            this.jobUrl,
+            this.validity
+        );
 
-      let resp = this.service.addjob(newjob);
-      resp.subscribe((data) => {
-          this.message = data;
-          this.router.navigate(['dashboard'])
-      });
-  }
+        let resp = this.service.addjob(newjob);
+        resp.subscribe((data) => {
+            this.message = data;
+            this.router.navigate(['dashboard']);
+        });
+    }
+
+    redirectCoordinatorDashboard() {
+        this.router.navigate(['coordinatordashboard']);
+
+    }
+
+    logout() {
+        this.router.navigate(['login']);
+    }
 }
