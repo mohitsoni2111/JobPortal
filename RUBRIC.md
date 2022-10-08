@@ -53,6 +53,56 @@
 |Does your website and documentation describe what support, if any, you provide to users and developers?|Yes||
 |Does your project have an e-mail address or forum that is solely for supporting users?|No||
 |Are e-mails to your support e-mail address received by more than one person?|Not Applicable||
+|Does your project have a ticketing system to manage bug reports and feature requests?|No||
+|Is your project's ticketing system publicly visible to your users, so they can view bug reports and feature requests?|Not Applicable||
+|Is your software’s architecture and design modular?|Yes||
+|Does your software use an accepted coding standard or convention?|Yes||
+|Does your software allow data to be imported and exported using open data formats?|Yes||
+|Does your software allow communications using open communications protocols?|Yes||
+|Is your software cross-platform compatible?|Yes||
+|Does your software adhere to appropriate accessibility conventions or standards?|Yes||
+|Does your documentation adhere to appropriate accessibility conventions or standards?|Yes||
+|Is your source code stored in a repository under revision control?|Yes||
+|Is each source code release a snapshot of the repository?|No||
+|Are releases tagged in the repository?|Yes||
+|Is there a branch of the repository that is always stable? (i.e. tests always pass, code always builds successfully)|Yes||
+|Do you back-up your repository?|Yes||
+|Do you provide publicly-available instructions for building your software from the source code?|Yes||
+|Can you build, or package, your software using an automated tool?|No||
+|Do you provide publicly-available instructions for deploying your software?|Yes||
+|Does your documentation list all third-party dependencies?|Yes||
+|Does your documentation list the version number for all third-party dependencies?|Yes||
+|Does your software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional?|Yes||
+|Can you download dependencies using a dependency management tool or package manager?|Yes||
+|Do you have tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful?|Yes||
+|Do you have an automated test suite for your software?|No||
+|Do you have a framework to periodically (e.g. nightly) run your tests on the latest version of the source code?|Not Applicable||
+|Do you use continuous integration, automatically running tests whenever changes are made to your source code?|Yes||
+|Are your test results publicly visible?|Yes||
+|Are all manually-run tests documented?|Yes||
+|Does your project have resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software?|No||
+|Does your website state how many projects and users are associated with your project?|No||
+|Do you provide success stories on your website?|No||
+|Do you list your important partners and collaborators on your website?|No||
+|Do you list your project's publications on your website or link to a resource where these are available?|No||
+|Do you list third-party publications that refer to your software on your website or link to a resource where these are available?|No||
+|Can users subscribe to notifications to changes to your source code repository?|Yes||
+|If your software is developed as an open source project (and, not just a project developing open source software), do you have a governance model?|Not Applicable||
+|Do you accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project?|Yes||
+|Do you have a contributions policy?|Yes||
+|Is your contributions' policy publicly available?|Yes||
+|Do contributors keep the copyright/IP of their contributions?|Yes||
+|Does your website and documentation clearly state the copyright owners of your software and documentation?|Yes||
+|Does each of your source code files include a copyright statement?|No||
+|Does your website and documentation clearly state the licence of your software?|No||
+|Is your software released under an open source licence?|No||
+|Is your software released under an OSI-approved open-source licence?|Not Applicable||
+|Does each of your source code files include a licence header?|Not Applicable||
+|Do you have a recommended citation for your software?|No||
+|Does your website or documentation include a project roadmap (a list of project and development milestones for the next 3, 6 and 12 months)?|Yes||
+|Does your website or documentation describe how your project is funded, and the period over which funding is guaranteed?|No||
+|Do you make timely announcements of the deprecation of components, APIs, etc.?|No||
+
 
 
 
