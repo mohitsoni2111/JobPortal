@@ -1,0 +1,8 @@
+edu.ncsu.group9.jobPortal
+edu.ncsu.group9.jobPortal.configuration
+edu.ncsu.group9.jobPortal.controller
+edu.ncsu.group9.jobPortal.dao
+edu.ncsu.group9.jobPortal.model
+edu.ncsu.group9.jobPortal.service
+edu.ncsu.group9.jobPortal.transformer
+edu.ncsu.group9.jobPortal.util
