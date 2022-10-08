@@ -640,130 +640,120 @@ export class SignupComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1&quot; /&gt;
-        &lt;title&gt;Sign Up Page&lt;/title&gt;
-        &lt;style&gt;
-            Body {
-                font-family: Calibri, Helvetica, sans-serif;
-                background-color: pink;
-            }
-            button {
-                background-color: #4caf50;
-                width: 100%;
-                color: orange;
-                padding: 15px;
-                margin: 10px 0px;
-                border: none;
-                cursor: pointer;
-            }
-            form {
-                border: 3px solid #f1f1f1;
-            }
-            input[type&#x3D;&#x27;text&#x27;],
-            input[type&#x3D;&#x27;password&#x27;] {
-                width: 100%;
-                margin: 8px 0;
-                padding: 12px 20px;
-                display: inline-block;
-                border: 2px solid green;
-                box-sizing: border-box;
-            }
-            button:hover {
-                opacity: 0.7;
-            }
-            .cancelbtn {
-                width: auto;
-                padding: 10px 18px;
-                margin: 10px 5px;
-            }
-
-            .container {
-                padding: 25px;
-                background-color: lightblue;
-            }
-        &lt;/style&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Sign Up Form&lt;/h1&gt;
-        &lt;form&gt;
-            &lt;div class&#x3D;&quot;container&quot;&gt;
-                &lt;label&gt;Student ID: &lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;text&quot;
-                    placeholder&#x3D;&quot;Enter Student ID&quot;
-                    [(ngModel)]&#x3D;&quot;studentId&quot;
-                    name&#x3D;&quot;studentId&quot;
-                    required
-                /&gt;
-                &lt;label&gt;First Name: &lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;text&quot;
-                    placeholder&#x3D;&quot;Enter First Name&quot;
-                    [(ngModel)]&#x3D;&quot;firstName&quot;
-                    name&#x3D;&quot;firstName&quot;
-                    required
-                /&gt;
-                &lt;label&gt;Last Name: &lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;text&quot;
-                    placeholder&#x3D;&quot;Enter Last Name&quot;
-                    [(ngModel)]&#x3D;&quot;lastName&quot;
-                    name&#x3D;&quot;lastName&quot;
-                    required
-                /&gt;
-                &lt;label&gt;Email: &lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;text&quot;
-                    placeholder&#x3D;&quot;Enter Email&quot;
-                    [(ngModel)]&#x3D;&quot;emailId&quot;
-                    name&#x3D;&quot;emailId&quot;
-                    required
-                /&gt;
-                &lt;label&gt;Password: &lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;password&quot;
-                    placeholder&#x3D;&quot;Enter Password&quot;
-                    [(ngModel)]&#x3D;&quot;password&quot;
-                    name&#x3D;&quot;password&quot;
-                    required
-                /&gt;
-                &lt;label&gt;Degree: &lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;text&quot;
-                    placeholder&#x3D;&quot;Enter Degree&quot;
-                    [(ngModel)]&#x3D;&quot;degree&quot;
-                    name&#x3D;&quot;degree&quot;
-                    required
-                /&gt;
-                &lt;label&gt;Course: &lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;text&quot;
-                    placeholder&#x3D;&quot;Enter Course&quot;
-                    [(ngModel)]&#x3D;&quot;course&quot;
-                    name&#x3D;&quot;course&quot;
-                    required
-                /&gt;
-                &lt;label&gt;Phone Number: &lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;text&quot;
-                    placeholder&#x3D;&quot;Enter Phone Number&quot;
-                    [(ngModel)]&#x3D;&quot;phoneNumber&quot;
-                    name&#x3D;&quot;phoneNumber&quot;
-                    required
-                /&gt;
-                &lt;input
-                    type&#x3D;&quot;submit&quot;
-                    name&#x3D;&quot;signup&quot;
-                    value&#x3D;&quot;Sign Up&quot;
-                    (click)&#x3D;&quot;signupNow()&quot;
+        <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;vh-100&quot;&gt;
+    &lt;div class&#x3D;&quot;container-fluid h-custom&quot;&gt;
+        &lt;div class&#x3D;&quot;row d-flex justify-content-center align-items-center h-100&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-9 col-lg-6 col-xl-5&quot;&gt;
+                &lt;img
+                    src&#x3D;&quot;https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp&quot;
+                    class&#x3D;&quot;img-fluid&quot;
+                    alt&#x3D;&quot;Sample image&quot;
                 /&gt;
             &lt;/div&gt;
-        &lt;/form&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+            &lt;div class&#x3D;&quot;col-md-8 col-lg-6 col-xl-4 offset-xl-1&quot;&gt;
+                &lt;h3
+                    style&#x3D;&quot;
+                        text-align: left;
+                        color: #4747ff;
+                        margin-bottom: 20px;
+                    &quot;
+                &gt;
+                    Student Sign Up
+                &lt;/h3&gt;
+                &lt;form&gt;
+                    &lt;div class&#x3D;&quot;container&quot;&gt;
+                        &lt;!-- &lt;label&gt;Student ID: &lt;/label&gt;
+                        &lt;input
+                            class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                            type&#x3D;&quot;text&quot;
+                            placeholder&#x3D;&quot;Enter Student ID&quot;
+                            [(ngModel)]&#x3D;&quot;studentId&quot;
+                            name&#x3D;&quot;studentId&quot;
+                            required
+                        /&gt; --&gt;
+                        &lt;label&gt;First Name: &lt;/label&gt;
+                        &lt;input
+                            class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                            type&#x3D;&quot;text&quot;
+                            placeholder&#x3D;&quot;Enter First Name&quot;
+                            [(ngModel)]&#x3D;&quot;firstName&quot;
+                            name&#x3D;&quot;firstName&quot;
+                            required
+                        /&gt;
+                        &lt;label&gt;Last Name: &lt;/label&gt;
+                        &lt;input
+                            class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                            type&#x3D;&quot;text&quot;
+                            placeholder&#x3D;&quot;Enter Last Name&quot;
+                            [(ngModel)]&#x3D;&quot;lastName&quot;
+                            name&#x3D;&quot;lastName&quot;
+                            required
+                        /&gt;
+                        &lt;label&gt;Email: &lt;/label&gt;
+                        &lt;input
+                            class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                            type&#x3D;&quot;text&quot;
+                            placeholder&#x3D;&quot;Enter Email&quot;
+                            [(ngModel)]&#x3D;&quot;emailId&quot;
+                            name&#x3D;&quot;emailId&quot;
+                            required
+                        /&gt;
+                        &lt;label&gt;Password: &lt;/label&gt;
+                        &lt;input
+                            class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                            type&#x3D;&quot;password&quot;
+                            placeholder&#x3D;&quot;Enter Password&quot;
+                            [(ngModel)]&#x3D;&quot;password&quot;
+                            name&#x3D;&quot;password&quot;
+                            required
+                        /&gt;
+                        &lt;label&gt;Degree: &lt;/label&gt;
+                        &lt;input
+                            class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                            type&#x3D;&quot;text&quot;
+                            placeholder&#x3D;&quot;Enter Degree&quot;
+                            [(ngModel)]&#x3D;&quot;degree&quot;
+                            name&#x3D;&quot;degree&quot;
+                            required
+                        /&gt;
+                        &lt;label&gt;Course: &lt;/label&gt;
+                        &lt;input
+                            class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                            type&#x3D;&quot;text&quot;
+                            placeholder&#x3D;&quot;Enter Course&quot;
+                            [(ngModel)]&#x3D;&quot;course&quot;
+                            name&#x3D;&quot;course&quot;
+                            required
+                        /&gt;
+                        &lt;label&gt;Phone Number: &lt;/label&gt;
+                        &lt;input
+                            class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                            type&#x3D;&quot;text&quot;
+                            placeholder&#x3D;&quot;Enter Phone Number&quot;
+                            [(ngModel)]&#x3D;&quot;phoneNumber&quot;
+                            name&#x3D;&quot;phoneNumber&quot;
+                            required
+                        /&gt;
+                    &lt;!-- &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;text-center text-lg-start mt-4 pt-2&quot;&gt; --&gt;
+                        &lt;button
+                            type&#x3D;&quot;button&quot;
+                            class&#x3D;&quot;btn btn-primary btn uppermargin&quot;
+                            style&#x3D;&quot;padding-left: 2.5rem; padding-right: 2.5rem&quot;
+                            (click)&#x3D;&quot;signupNow()&quot;
+                        &gt;
+                            Sign Up
+                        &lt;/button&gt;
+                        &lt;p class&#x3D;&quot;small fw-bold mt-2 pt-1 mb-0&quot;&gt;
+                            Already have an account?
+                            &lt;a href&#x3D;&quot;/login&quot; class&#x3D;&quot;link-danger&quot;&gt;Log In&lt;/a&gt;
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
 </code></pre>
     </div>
 
@@ -771,7 +761,27 @@ export class SignupComponent implements OnInit {
                 <p class="comment">
                     <code>./signup.component.css</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">.divider:after,
+.divider:before {
+    content: &#x27;&#x27;;
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.h-custom {
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+.lowermargin{
+    margin-bottom: 10px;
+}
+.uppermargin{
+    margin-top: 5px;
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -799,7 +809,7 @@ export class SignupComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!DOCTYPE html><html>    <head>        <meta name="viewport" content="width=device-width, initial-scale=1" />        <title>Sign Up Page</title>        <style>            Body {                font-family: Calibri, Helvetica, sans-serif;                background-color: pink;            }            button {                background-color: #4caf50;                width: 100%;                color: orange;                padding: 15px;                margin: 10px 0px;                border: none;                cursor: pointer;            }            form {                border: 3px solid #f1f1f1;            }            input[type=\'text\'],            input[type=\'password\'] {                width: 100%;                margin: 8px 0;                padding: 12px 20px;                display: inline-block;                border: 2px solid green;                box-sizing: border-box;            }            button:hover {                opacity: 0.7;            }            .cancelbtn {                width: auto;                padding: 10px 18px;                margin: 10px 5px;            }            .container {                padding: 25px;                background-color: lightblue;            }        </style>    </head>    <body>        <h1>Sign Up Form</h1>        <form>            <div class="container">                <label>Student ID: </label>                <input                    type="text"                    placeholder="Enter Student ID"                    [(ngModel)]="studentId"                    name="studentId"                    required                />                <label>First Name: </label>                <input                    type="text"                    placeholder="Enter First Name"                    [(ngModel)]="firstName"                    name="firstName"                    required                />                <label>Last Name: </label>                <input                    type="text"                    placeholder="Enter Last Name"                    [(ngModel)]="lastName"                    name="lastName"                    required                />                <label>Email: </label>                <input                    type="text"                    placeholder="Enter Email"                    [(ngModel)]="emailId"                    name="emailId"                    required                />                <label>Password: </label>                <input                    type="password"                    placeholder="Enter Password"                    [(ngModel)]="password"                    name="password"                    required                />                <label>Degree: </label>                <input                    type="text"                    placeholder="Enter Degree"                    [(ngModel)]="degree"                    name="degree"                    required                />                <label>Course: </label>                <input                    type="text"                    placeholder="Enter Course"                    [(ngModel)]="course"                    name="course"                    required                />                <label>Phone Number: </label>                <input                    type="text"                    placeholder="Enter Phone Number"                    [(ngModel)]="phoneNumber"                    name="phoneNumber"                    required                />                <input                    type="submit"                    name="signup"                    value="Sign Up"                    (click)="signupNow()"                />            </div>        </form>    </body></html></div>'
+        var COMPONENT_TEMPLATE = '<div><section class="vh-100">    <div class="container-fluid h-custom">        <div class="row d-flex justify-content-center align-items-center h-100">            <div class="col-md-9 col-lg-6 col-xl-5">                <img                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"                    class="img-fluid"                    alt="Sample image"                />            </div>            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">                <h3                    style="                        text-align: left;                        color: #4747ff;                        margin-bottom: 20px;                    "                >                    Student Sign Up                </h3>                <form>                    <div class="container">                        <!-- <label>Student ID: </label>                        <input                            class="form-control form-control-sm lowermargin"                            type="text"                            placeholder="Enter Student ID"                            [(ngModel)]="studentId"                            name="studentId"                            required                        /> -->                        <label>First Name: </label>                        <input                            class="form-control form-control-sm lowermargin"                            type="text"                            placeholder="Enter First Name"                            [(ngModel)]="firstName"                            name="firstName"                            required                        />                        <label>Last Name: </label>                        <input                            class="form-control form-control-sm lowermargin"                            type="text"                            placeholder="Enter Last Name"                            [(ngModel)]="lastName"                            name="lastName"                            required                        />                        <label>Email: </label>                        <input                            class="form-control form-control-sm lowermargin"                            type="text"                            placeholder="Enter Email"                            [(ngModel)]="emailId"                            name="emailId"                            required                        />                        <label>Password: </label>                        <input                            class="form-control form-control-sm lowermargin"                            type="password"                            placeholder="Enter Password"                            [(ngModel)]="password"                            name="password"                            required                        />                        <label>Degree: </label>                        <input                            class="form-control form-control-sm lowermargin"                            type="text"                            placeholder="Enter Degree"                            [(ngModel)]="degree"                            name="degree"                            required                        />                        <label>Course: </label>                        <input                            class="form-control form-control-sm lowermargin"                            type="text"                            placeholder="Enter Course"                            [(ngModel)]="course"                            name="course"                            required                        />                        <label>Phone Number: </label>                        <input                            class="form-control form-control-sm lowermargin"                            type="text"                            placeholder="Enter Phone Number"                            [(ngModel)]="phoneNumber"                            name="phoneNumber"                            required                        />                    <!-- </div>                    <div class="text-center text-lg-start mt-4 pt-2"> -->                        <button                            type="button"                            class="btn btn-primary btn uppermargin"                            style="padding-left: 2.5rem; padding-right: 2.5rem"                            (click)="signupNow()"                        >                            Sign Up                        </button>                        <p class="small fw-bold mt-2 pt-1 mb-0">                            Already have an account?                            <a href="/login" class="link-danger">Log In</a>                        </p>                    </div>                </form>            </div>        </div>    </div></section></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CoordinatordashboardComponent', 'selector': 'app-coordinatordashboard'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'JobsComponent', 'selector': 'app-jobs'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'SignupComponent', 'selector': 'app-signup'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'SignupComponent'};
