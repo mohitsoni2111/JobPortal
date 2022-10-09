@@ -1,4 +1,4 @@
--- Job portal is the schema name
+-- jobportal is the schema name
 
 CREATE TABLE jobportal.user (
     userId varchar(255) primary key,
