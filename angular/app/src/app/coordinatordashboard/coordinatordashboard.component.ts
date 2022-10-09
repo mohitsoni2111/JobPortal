@@ -23,4 +23,8 @@ export class CoordinatordashboardComponent implements OnInit {
       this.router.navigate(['jobs']);
   }
   
+  logout(){
+    this.router.navigate(['login'])
+
+}
 }

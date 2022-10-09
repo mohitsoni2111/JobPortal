@@ -1,0 +1,1053 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  JobsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/jobs/jobs.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-jobs</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./jobs.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./jobs.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#companyName" >companyName</a>
+                            </li>
+                            <li>
+                                <a href="#jobType" >jobType</a>
+                            </li>
+                            <li>
+                                <a href="#jobUrl" >jobUrl</a>
+                            </li>
+                            <li>
+                                <a href="#message" >message</a>
+                            </li>
+                            <li>
+                                <a href="#profileDescription" >profileDescription</a>
+                            </li>
+                            <li>
+                                <a href="#streamType" >streamType</a>
+                            </li>
+                            <li>
+                                <a href="#validity" >validity</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#addJob" >addJob</a>
+                            </li>
+                            <li>
+                                <a href="#logout" >logout</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#redirectCoordinatorDashboard" >redirectCoordinatorDashboard</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(service: <a href="../injectables/JobsService.html" target="_self">JobsService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/jobs/jobs.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/JobsService.html" target="_self" >JobsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addJob"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>addJob</b></span>
+                        <a href="#addJob"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addJob()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/jobs/jobs.component.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/jobs/jobs.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/jobs/jobs.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectCoordinatorDashboard"></a>
+                    <span class="name">
+                        <span ><b>redirectCoordinatorDashboard</b></span>
+                        <a href="#redirectCoordinatorDashboard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>redirectCoordinatorDashboard()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/jobs/jobs.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="companyName"></a>
+                    <span class="name">
+                        <span ><b>companyName</b></span>
+                        <a href="#companyName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/jobs/jobs.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="jobType"></a>
+                    <span class="name">
+                        <span ><b>jobType</b></span>
+                        <a href="#jobType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/jobs/jobs.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="jobUrl"></a>
+                    <span class="name">
+                        <span ><b>jobUrl</b></span>
+                        <a href="#jobUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/jobs/jobs.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="message"></a>
+                    <span class="name">
+                        <span ><b>message</b></span>
+                        <a href="#message"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/jobs/jobs.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="profileDescription"></a>
+                    <span class="name">
+                        <span ><b>profileDescription</b></span>
+                        <a href="#profileDescription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/jobs/jobs.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="streamType"></a>
+                    <span class="name">
+                        <span ><b>streamType</b></span>
+                        <a href="#streamType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/jobs/jobs.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validity"></a>
+                    <span class="name">
+                        <span ><b>validity</b></span>
+                        <a href="#validity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/jobs/jobs.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { JobsService } from &#x27;../services/jobs.service&#x27;;
+import { Job } from &#x27;./job&#x27;;
+
+@Component({
+    selector: &#x27;app-jobs&#x27;,
+    templateUrl: &#x27;./jobs.component.html&#x27;,
+    styleUrls: [&#x27;./jobs.component.css&#x27;],
+})
+export class JobsComponent implements OnInit {
+    message: any;
+    companyName: string;
+    jobType: string;
+    profileDescription: string;
+    streamType: string;
+    jobUrl: string;
+    validity: string;
+    constructor(private service: JobsService, private router: Router) {
+        this.message &#x3D; &#x27;&#x27;;
+        this.companyName &#x3D; &#x27;&#x27;;
+        this.jobType &#x3D; &#x27;&#x27;;
+        this.profileDescription &#x3D; &#x27;&#x27;;
+        this.streamType &#x3D; &#x27;&#x27;;
+        this.jobUrl &#x3D; &#x27;&#x27;;
+        this.validity &#x3D; &#x27;&#x27;;
+    }
+
+    ngOnInit(): void {}
+
+    public addJob() {
+        let newjob: Job &#x3D; new Job(
+            this.companyName,
+            this.jobType,
+            this.profileDescription,
+            this.streamType,
+            this.jobUrl,
+            this.validity
+        );
+
+        let resp &#x3D; this.service.addjob(newjob);
+        resp.subscribe((data) &#x3D;&gt; {
+            this.message &#x3D; data;
+            this.router.navigate([&#x27;coordinatordashboard&#x27;]);
+        });
+    }
+
+    redirectCoordinatorDashboard() {
+        this.router.navigate([&#x27;coordinatordashboard&#x27;]);
+
+    }
+
+    logout() {
+        this.router.navigate([&#x27;login&#x27;]);
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1&quot; /&gt;
+        &lt;title&gt;Login Page&lt;/title&gt;
+        &lt;style&gt;
+            Body {
+                font-family: Calibri, Helvetica, sans-serif;
+                background-color: pink;
+            }
+            button {
+                background-color: #4caf50;
+                width: 100%;
+                color: orange;
+                padding: 15px;
+                margin: 10px 0px;
+                border: none;
+                cursor: pointer;
+            }
+            form {
+                border: 3px solid #f1f1f1;
+            }
+            input[type&#x3D;&#x27;text&#x27;],
+            input[type&#x3D;&#x27;password&#x27;] {
+                width: 100%;
+                margin: 8px 0;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px solid green;
+                box-sizing: border-box;
+            }
+            button:hover {
+                opacity: 0.7;
+            }
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                margin: 10px 5px;
+            }
+
+            .container {
+                padding: 25px;
+                background-color: lightblue;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Add New Jobs&lt;/h1&gt;
+        
+    &lt;/body&gt;
+&lt;/html&gt; --&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang&#x3D;&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset&#x3D;&quot;utf-8&quot; /&gt;
+        &lt;meta
+            name&#x3D;&quot;viewport&quot;
+            content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1, shrink-to-fit&#x3D;no&quot;
+        /&gt;
+        &lt;meta name&#x3D;&quot;description&quot; content&#x3D;&quot;&quot; /&gt;
+        &lt;meta name&#x3D;&quot;author&quot; content&#x3D;&quot;&quot; /&gt;
+
+        &lt;link
+            href&#x3D;&quot;https://fonts.googleapis.com/css?family&#x3D;Poppins:100,200,300,400,500,600,700,800,900&amp;display&#x3D;swap&quot;
+            rel&#x3D;&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;title&gt;JobPortal&lt;/title&gt;
+
+        &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;jobs.component.css&quot; /&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;nav class&#x3D;&quot;navbar navbar-expand-lg justify-content-between&quot;&gt;
+            &lt;div class&#x3D;&quot;container&quot;&gt;
+                &lt;a class&#x3D;&quot;navbar-brand&quot;
+                    &gt;&lt;h2 class&#x3D;&quot;text-center&quot;&gt;JobPortal : Coordinator Dashboard&lt;/h2&gt;&lt;/a
+                &gt;
+            &lt;/div&gt;
+            &lt;button
+                class&#x3D;&quot;btn btn-light my-2 my-sm-0&quot;
+                type&#x3D;&quot;submit&quot;
+                (click)&#x3D;&quot;logout()&quot;
+            &gt;
+                Logout
+            &lt;/button&gt;
+        &lt;/nav&gt;
+
+        &lt;div class&#x3D;&quot;col-md-8 col-lg-6 col-xl-4&quot; id&#x3D;&quot;formcontainer&quot;&gt;
+            &lt;h2
+                style&#x3D;&quot;
+                    text-align: center;
+                    color: #4747ff;
+                    margin-bottom: 25px;
+                    margin-top: 30px;
+                &quot;
+            &gt;
+                Add a New Job Listing
+            &lt;/h2&gt;
+            &lt;form class&#x3D;&quot;justify-content-center&quot;&gt;
+                &lt;div class&#x3D;&quot;container&quot;&gt;
+                    &lt;label&gt;Company Name: &lt;/label&gt;
+                    &lt;input
+                        class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                        type&#x3D;&quot;text&quot;
+                        placeholder&#x3D;&quot;Enter name of the company&quot;
+                        [(ngModel)]&#x3D;&quot;companyName&quot;
+                        name&#x3D;&quot;companyName&quot;
+                        required
+                    /&gt;
+                    &lt;label&gt;Job Position: &lt;/label&gt;
+                    &lt;input
+                        class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                        type&#x3D;&quot;text&quot;
+                        placeholder&#x3D;&quot;Enter Job Position&quot;
+                        [(ngModel)]&#x3D;&quot;jobType&quot;
+                        name&#x3D;&quot;jobType&quot;
+                        required
+                    /&gt;
+                    &lt;label&gt;Job Description: &lt;/label&gt;
+                    &lt;input
+                        class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                        type&#x3D;&quot;text&quot;
+                        placeholder&#x3D;&quot;Enter Job Description&quot;
+                        [(ngModel)]&#x3D;&quot;profileDescription&quot;
+                        name&#x3D;&quot;profileDescription&quot;
+                        required
+                    /&gt;
+                    &lt;label&gt;Stream: &lt;/label&gt;
+                    &lt;input
+                        class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                        type&#x3D;&quot;text&quot;
+                        placeholder&#x3D;&quot;Enter Streams&quot;
+                        [(ngModel)]&#x3D;&quot;streamType&quot;
+                        name&#x3D;&quot;streamType&quot;
+                        required
+                    /&gt;
+                    &lt;label&gt;Link: &lt;/label&gt;
+                    &lt;input
+                        class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                        type&#x3D;&quot;text&quot;
+                        placeholder&#x3D;&quot;Enter Job Link&quot;
+                        [(ngModel)]&#x3D;&quot;jobUrl&quot;
+                        name&#x3D;&quot;jobUrl&quot;
+                        required
+                    /&gt;
+                    &lt;label&gt;Validity: &lt;/label&gt;
+                    &lt;input
+                        class&#x3D;&quot;form-control form-control-sm lowermargin&quot;
+                        type&#x3D;&quot;date&quot;
+                        placeholder&#x3D;&quot;Enter Last Date of Application&quot;
+                        [(ngModel)]&#x3D;&quot;validity&quot;
+                        name&#x3D;&quot;validity&quot;
+                        required
+                    /&gt;
+
+                    &lt;input
+                        class&#x3D;&quot;btn btn-outline-secondary btn uppermargin jobsButton&quot;
+                        type&#x3D;&quot;submit&quot;
+                        name&#x3D;&quot;goback&quot;
+                        value&#x3D;&quot;Go Back&quot;
+                        (click)&#x3D;&quot;redirectCoordinatorDashboard()&quot;
+                    /&gt;
+
+                    &lt;input
+                        class&#x3D;&quot;btn btn-outline-primary btn uppermargin jobsButton&quot;
+                        type&#x3D;&quot;submit&quot;
+                        name&#x3D;&quot;create&quot;
+                        value&#x3D;&quot;Create&quot;
+                        (click)&#x3D;&quot;addJob()&quot;
+                    /&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./jobs.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">body {
+    font-family: &#x27;Poppins&#x27;, sans-serif;
+    overflow-x: hidden;
+}
+p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+}
+
+nav {
+    background-color: #232323;
+    padding: 15px;
+}
+.background-header {
+    position: fixed;
+    background-color: #fff !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    float: left;
+    outline: none;
+}
+.navbar .navbar-brand h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 650;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0px 15px;
+}
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background: #4747ff;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+}
+
+#joblisting {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#formcontainer {
+    margin: auto;
+}
+
+.divider:after,
+.divider:before {
+    content: &#x27;&#x27;;
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.h-custom {
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+.lowermargin {
+    margin-bottom: 10px;
+}
+.uppermargin {
+    margin-top: 5px;
+}
+
+.jobsButton {
+    margin-right: 10px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- <!DOCTYPE html><html>    <head>        <meta name="viewport" content="width=device-width, initial-scale=1" />        <title>Login Page</title>        <style>            Body {                font-family: Calibri, Helvetica, sans-serif;                background-color: pink;            }            button {                background-color: #4caf50;                width: 100%;                color: orange;                padding: 15px;                margin: 10px 0px;                border: none;                cursor: pointer;            }            form {                border: 3px solid #f1f1f1;            }            input[type=\'text\'],            input[type=\'password\'] {                width: 100%;                margin: 8px 0;                padding: 12px 20px;                display: inline-block;                border: 2px solid green;                box-sizing: border-box;            }            button:hover {                opacity: 0.7;            }            .cancelbtn {                width: auto;                padding: 10px 18px;                margin: 10px 5px;            }            .container {                padding: 25px;                background-color: lightblue;            }        </style>    </head>    <body>        <h1>Add New Jobs</h1>            </body></html> --><!DOCTYPE html><html lang="en">    <head>        <meta charset="utf-8" />        <meta            name="viewport"            content="width=device-width, initial-scale=1, shrink-to-fit=no"        />        <meta name="description" content="" />        <meta name="author" content="" />        <link            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"            rel="stylesheet"        />        <title>JobPortal</title>        <link rel="stylesheet" href="jobs.component.css" />    </head>    <body>        <nav class="navbar navbar-expand-lg justify-content-between">            <div class="container">                <a class="navbar-brand"                    ><h2 class="text-center">JobPortal : Coordinator Dashboard</h2></a                >            </div>            <button                class="btn btn-light my-2 my-sm-0"                type="submit"                (click)="logout()"            >                Logout            </button>        </nav>        <div class="col-md-8 col-lg-6 col-xl-4" id="formcontainer">            <h2                style="                    text-align: center;                    color: #4747ff;                    margin-bottom: 25px;                    margin-top: 30px;                "            >                Add a New Job Listing            </h2>            <form class="justify-content-center">                <div class="container">                    <label>Company Name: </label>                    <input                        class="form-control form-control-sm lowermargin"                        type="text"                        placeholder="Enter name of the company"                        [(ngModel)]="companyName"                        name="companyName"                        required                    />                    <label>Job Position: </label>                    <input                        class="form-control form-control-sm lowermargin"                        type="text"                        placeholder="Enter Job Position"                        [(ngModel)]="jobType"                        name="jobType"                        required                    />                    <label>Job Description: </label>                    <input                        class="form-control form-control-sm lowermargin"                        type="text"                        placeholder="Enter Job Description"                        [(ngModel)]="profileDescription"                        name="profileDescription"                        required                    />                    <label>Stream: </label>                    <input                        class="form-control form-control-sm lowermargin"                        type="text"                        placeholder="Enter Streams"                        [(ngModel)]="streamType"                        name="streamType"                        required                    />                    <label>Link: </label>                    <input                        class="form-control form-control-sm lowermargin"                        type="text"                        placeholder="Enter Job Link"                        [(ngModel)]="jobUrl"                        name="jobUrl"                        required                    />                    <label>Validity: </label>                    <input                        class="form-control form-control-sm lowermargin"                        type="date"                        placeholder="Enter Last Date of Application"                        [(ngModel)]="validity"                        name="validity"                        required                    />                    <input                        class="btn btn-outline-secondary btn uppermargin jobsButton"                        type="submit"                        name="goback"                        value="Go Back"                        (click)="redirectCoordinatorDashboard()"                    />                    <input                        class="btn btn-outline-primary btn uppermargin jobsButton"                        type="submit"                        name="create"                        value="Create"                        (click)="addJob()"                    />                </div>            </form>        </div>    </body></html></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CoordinatordashboardComponent', 'selector': 'app-coordinatordashboard'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'JobsComponent', 'selector': 'app-jobs'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'SignupComponent', 'selector': 'app-signup'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'JobsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'JobsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

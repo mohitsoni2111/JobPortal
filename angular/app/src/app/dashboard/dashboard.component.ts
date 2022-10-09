@@ -17,4 +17,9 @@ export class DashboardComponent implements OnInit {
             this.companies = data;
         });
     }
+
+    logout(){
+        this.router.navigate(['login'])
+
+    }
 }
