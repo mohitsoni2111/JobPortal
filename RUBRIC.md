@@ -14,11 +14,11 @@
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3||
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3||
 |Use of version control tools|3|https://github.com/mohitsoni2111/jobPortal|
-|Use of style checkers|||
-|Use of code formatters|||
-|Use of syntax checkers|||
-|Use of code coverage|||
-|Other automated analysis tools|||
+|Use of style checkers|No||
+|Use of code formatters|Yes||
+|Use of syntax checkers|No||
+|Use of code coverage|Yes||
+|Other automated analysis tools|No||
 |Test cases exist|2|https://github.com/mohitsoni2111/jobPortal/tree/main/src/test/java/edu/ncsu/group9/jobPortal|
 |Test cases are routinely executed|2|https://github.com/mohitsoni2111/jobPortal/actions|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|3||
