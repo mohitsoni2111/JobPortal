@@ -1,6 +1,7 @@
 # Job Portal
 
 [![DOI](https://zenodo.org/badge/545554067.svg)](https://zenodo.org/badge/latestdoi/545554067)
+[![codecov](https://codecov.io/gh/mohitsoni2111/jobPortal/branch/main/graph/badge.svg?token=0VDF297S0Z)](https://codecov.io/gh/mohitsoni2111/jobPortal)
 [![GitHub Release](https://img.shields.io/github/release/mohitsoni2111/jobPortal.svg)](https://github.com/mohitsoni2111/jobPortal/releases)
 <a href="https://github.com/mohitsoni2111/jobPortal/blob/main/LICENSE"><img 
 alt="License" src="https://img.shields.io/github/license/mohitsoni2111/jobPortal"></a>
@@ -64,7 +65,7 @@ Clone the repository through the terminal
 
 Step 3:
 Download [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
-Setup the Db connection with tables mentioned in the model directory
+Set up the Db connection with tables mentioned in the model directory using the [DbSetup.sql](./src/main/resources).
 
 Update resources -> application.properties with your db credentials.
 
