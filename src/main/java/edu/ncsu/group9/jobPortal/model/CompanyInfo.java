@@ -41,6 +41,16 @@ public class CompanyInfo {
     public CompanyInfo() {
     }
 
+    public CompanyInfo(int companyId, String companyName, String jobType, String profileDescription, String streamType, String jobUrl, String validity) {
+        this.companyId = companyId;
+        this.companyName = companyName;
+        this.jobType = jobType;
+        this.profileDescription = profileDescription;
+        this.streamType = streamType;
+        this.jobUrl = jobUrl;
+        this.validity = validity;
+    }
+
     public int getCompanyId() {
         return companyId;
     }
