@@ -1,7 +1,7 @@
 # Job Portal
 
 [![DOI](https://zenodo.org/badge/545554067.svg)](https://zenodo.org/badge/latestdoi/545554067)
-[![codecov](https://codecov.io/gh/mohitsoni2111/jobPortal/branch/main/graph/badge.svg?token=0VDF297S0Z)](https://codecov.io/gh/mohitsoni2111/jobPortal)
+[![codecov](https://codecov.io/gh/mohitsoni2111/jobportal/branch/main/graph/badge.svg?token=0VDF297S0Z)](https://codecov.io/gh/mohitsoni2111/jobPortal)
 [![GitHub Release](https://img.shields.io/github/release/mohitsoni2111/jobPortal.svg)](https://github.com/mohitsoni2111/jobPortal/releases)
 <a href="https://github.com/mohitsoni2111/jobPortal/blob/main/LICENSE"><img 
 alt="License" src="https://img.shields.io/github/license/mohitsoni2111/jobPortal"></a>
@@ -16,14 +16,12 @@ alt="License" src="https://img.shields.io/github/license/mohitsoni2111/jobPortal
 
 ## Table of Contents
 
-1. [About](#about)
+1. [About Job Portal](#about)
 2. [Getting started](#getting-started)
-3. [Documentation](#documentation)
+3. [Documentation](./documentation)
    - [Development Specifications](#development-specifications)
      - [Frontend](./angular)
-     - Backend
-   - Deployment Specifications
-   - User Manual
+     - [Backend](./src)
 4. [License](#license)
 5. [Contributors](#contributors)
 
@@ -31,7 +29,7 @@ alt="License" src="https://img.shields.io/github/license/mohitsoni2111/jobPortal
 
 ## About
 
-"JobPortal" is a job portal web application where students can apply for different positions and coordinator can post different positions.
+JobPortal is a web application where students can apply for different positions and coordinator can post different positions.
 
 Our application connects the recruiters and candidates.
 
@@ -50,7 +48,7 @@ Install [Node](https://nodejs.org/en/download/)
 
 Install [Angular cli](https://angular.io/cli)
 
-Use [Java IDE](https://www.jetbrains.com/idea/)
+Install [Intellij IDEA](https://www.jetbrains.com/idea/)
 
 Step 2:
 Clone the repository through the terminal
@@ -65,7 +63,7 @@ Clone the repository through the terminal
 
 Step 3:
 Download [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
-Set up the Db connection with tables mentioned in the model directory using the [DbSetup.sql](./src/main/resources).
+Set up the Db connection with tables mentioned in the model directory using the [dbSetup.sql](./src/main/resources/dbSetup.sql).
 
 Update resources -> application.properties with your db credentials.
 
@@ -79,6 +77,8 @@ Run commands to open the front-end of the application:
 
     `npm install`
     `ng serve --open`
+
+Finally, within the Intellij IDEA IDE run the SpringBoot Runner Class to start the backend server - [JobPortalApplicationRunner.java](src/main/java/edu/ncsu/group9/jobPortal/JobPortalApplicationRunner.java)
 
 ## Development Specifications
 
