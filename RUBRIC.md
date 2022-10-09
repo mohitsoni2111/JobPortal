@@ -14,11 +14,11 @@
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3||
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3||
 |Use of version control tools|3|https://github.com/mohitsoni2111/jobPortal|
-|Use of style checkers|No||
-|Use of code formatters|Yes||
-|Use of syntax checkers|No||
-|Use of code coverage|Yes||
-|Other automated analysis tools|No||
+|Use of style checkers|1||
+|Use of code formatters|2||
+|Use of syntax checkers|1||
+|Use of code coverage|3||
+|Other automated analysis tools|1||
 |Test cases exist|2|https://github.com/mohitsoni2111/jobPortal/tree/main/src/test/java/edu/ncsu/group9/jobPortal|
 |Test cases are routinely executed|2|https://github.com/mohitsoni2111/jobPortal/actions|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|3||
@@ -26,7 +26,7 @@
 |Chat channel: exists|3||
 |Test cases: a large proportion of the issues related to handling failing cases|2|https://github.com/mohitsoni2111/jobPortal/issues?q=is%3Aissue+is%3Aclosed|
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files|3||
-|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|||
+|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|2||
 |Evidence that the whole team is using the same tools|3||
 |Evidence that the members of the team are working across multiple places in the code base|2||
 |Short release cycles|2|https://github.com/mohitsoni2111/jobPortal/releases|
