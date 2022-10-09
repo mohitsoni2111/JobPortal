@@ -1,16 +1,16 @@
 # Job Portal
 
 [![DOI](https://zenodo.org/badge/545554067.svg)](https://zenodo.org/badge/latestdoi/545554067)
-[![codecov](https://codecov.io/gh/mohitsoni2111/jobPortal/branch/main/graph/badge.svg?token=0VDF297S0Z)](https://codecov.io/gh/mohitsoni2111/jobPortal)
 [![GitHub Release](https://img.shields.io/github/release/mohitsoni2111/jobPortal.svg)](https://github.com/mohitsoni2111/jobPortal/releases)
 <a href="https://github.com/mohitsoni2111/jobPortal/blob/main/LICENSE"><img 
 alt="License" src="https://img.shields.io/github/license/mohitsoni2111/jobPortal"></a>
 [![Build](https://github.com/mohitsoni2111/jobPortal/actions/workflows/build.yml/badge.svg)](https://github.com/mohitsoni2111/jobPortal/actions/workflows/build.yml)
-[![Build](https://github.com/mohitsoni2111/jobPortal/actions/workflows/test.yml/badge.svg)](https://github.com/mohitsoni2111/jobPortal/actions/workflows/test.yml)
+[![Test](https://github.com/mohitsoni2111/jobPortal/actions/workflows/test.yml/badge.svg)](https://github.com/mohitsoni2111/jobPortal/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/mohitsoni2111/jobPortal/branch/main/graph/badge.svg?token=0VDF297S0Z)](https://codecov.io/gh/mohitsoni2111/jobPortal)
 [![GitHub contributors](https://img.shields.io/github/contributors/mohitsoni2111/jobPortal)](https://github.com/mohitsoni2111/jobPortal/graphs/contributors)
 [![Open Issues](https://img.shields.io/github/issues/mohitsoni2111/jobPortal)](https://github.com/mohitsoni2111/jobPortal/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/mohitsoni2111/jobPortal)](https://github.com/mohitsoni2111/jobPortal)
-[![GitHub Repo Size](https://img.shields.io/github/repo-size/mohitsoni2111/jobPortal.svg)](https://img.shields.io/github/repo-size/mohitsoni2111/jobPortal.svg)
+<!-- [![GitHub Repo Size](https://img.shields.io/github/repo-size/mohitsoni2111/jobPortal.svg)](https://img.shields.io/github/repo-size/mohitsoni2111/jobPortal.svg) -->
 
 ---
 
@@ -27,19 +27,31 @@ alt="License" src="https://img.shields.io/github/license/mohitsoni2111/jobPortal
 4. [License](#license)
 5. [Contributors](#contributors)
 
----
 
 ## About
 
-"JobPortal" is a job portal web application where students can apply for different positions and coordinator can post different positions.
+"JobPortal" is a web application for students to find all the job listings at one place instead of going through a bunch of different websites for the same. Coordinators can post new job listing which can be viewed by the students.
 
-Our application connects the recruiters and candidates.
+## Application Preview
+### Student Registration Page
+<img width="1200"  src="/images/studentregistration.png">
 
----
+### Login Page
+<img width="1200"  src="/images/login.png">
 
-## Getting Started
+### Invalid Login Attempt
+<img width="1200"  src="/images/invalidlogin.png">>
 
-#Installation Guide
+### Student Dashboard
+<img width="1200"  src="/images/studentdashboard.png">>
+
+### Coordinator Dashboard
+<img width="1200"  src="/images/coordinatordashboard.png">
+     
+### Adding a New Job
+<img width="1200"  src="/images/addjob.png">
+
+## Installation Guide
 
 Step 1:
 Install the following dependencies
@@ -72,13 +84,13 @@ Update resources -> application.properties with your db credentials.
 Step 4: 
 From Terminal go to folder:
 
-    `cd angular/app`
+    cd angular/app
 
 Step 5:
 Run commands to open the front-end of the application:
 
-    `npm install`
-    `ng serve --open`
+    npm install
+    ng serve --open
 
 ## Development Specifications
 
@@ -93,24 +105,24 @@ Run commands to open the front-end of the application:
 
 The above-mentioned technologies were used to develop the project.
 
----
+
 
 ## License
 
 This project is licensed under [MIT](https://mit-license.org/).
 Further details regarding the license can be found [here](https://github.com/mohitsoni2111/jobPortal/blob/main/LICENSE).
 
----
-# Future Scope
+
+## Future Scope
 Job Search can be a daunting task and although the availibility of multiple platforms makes it somewhat easier, it doesn't entirely streamline all tasks, or provide help for all categories of job vacancies. 
   The future scope of Job Portal includes addition of various functionalities 
 
   ### Phase 2:
   
 
-  1.	**User Profile Creation** –Job Portal will allow the users to define their own profiles, with the inclusion of their profile image, academic status and qualifications, it can also include the option to add legal status as certain jobs are not available to international students.
+  1.	**User Profile Creation** - Job Portal will allow the users to define their own profiles, with the inclusion of their profile image, academic status and qualifications, it can also include the option to add legal status as certain jobs are not available to international students.
   
-  2.	**Resume Upload** – The option to include and upload one's resume will be added in the phase, to provide a summarised statement of information for recruiters and allow easy sharing of profiles.
+  2.	**Resume Upload** - The option to include and upload one's resume will be added in the phase, to provide a summarised statement of information for recruiters and allow easy sharing of profiles.
   3.	**Job Analysis** - Applicants can be provided with the option to analyse jobs and study their requirements, additionally they can be provided with features will allow them to compare pays for the same position across multiple companies.
   4.	**Profile Verification** - The next phase will integrate a verification step to ensure that only authorized and verified users are allowed to access the platform, thereby disallowing multiple profile creations.
 
@@ -119,6 +131,6 @@ Job Search can be a daunting task and although the availibility of multiple plat
 
 - [Mohit Soni](https://github.com/mohitsoni2111)
 - [Tilak Satra](https://github.com/tilaksatra)
-- [Akshat Salva](https://github.com/akshat22)
+- [Akshat Savla](https://github.com/akshat22)
 - [Madiha Mansoori](https://github.com/madiha2001)
 - [Anagha Patil](https://github.com/Anagha-2000)
