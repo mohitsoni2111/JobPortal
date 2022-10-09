@@ -100,7 +100,20 @@ This project is licensed under [MIT](https://mit-license.org/).
 Further details regarding the license can be found [here](https://github.com/mohitsoni2111/jobPortal/blob/main/LICENSE).
 
 ---
+# Future Scope
+Job Search can be a daunting task and although the availibility of multiple platforms makes it somewhat easier, it doesn't entirely streamline all tasks, or provide help for all categories of job vacancies. 
+  The future scope of Job Portal includes addition of various functionalities 
 
+  ### Phase 2:
+  
+
+  1.	**User Profile Creation** –Job Portal will allow the users to define their own profiles, with the inclusion of their profile image, academic status and qualifications, it can also include the option to add legal status as certain jobs are not available to international students.
+  
+  2.	**Resume Upload** – The option to include and upload one's resume will be added in the phase, to provide a summarised statement of information for recruiters and allow easy sharing of profiles.
+  3.	**Job Analysis** - Applicants can be provided with the option to analyse jobs and study their requirements, additionally they can be provided with features will allow them to compare pays for the same position across multiple companies.
+  4.	**Profile Verification** - The next phase will integrate a verification step to ensure that only authorized and verified users are allowed to access the platform, thereby disallowing multiple profile creations.
+
+ 
 ## Contributors
 
 - [Mohit Soni](https://github.com/mohitsoni2111)
