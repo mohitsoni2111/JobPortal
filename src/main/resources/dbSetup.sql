@@ -1,11 +1,12 @@
--- Job portal is the schema name
+-- jobportal is the schema name
 
-CREATE TABLE Jobportal.User (
+CREATE TABLE jobportal.user (
     userId varchar(255) primary key,
-    userPassword varchar(255)
+    userPassword varchar(255),
+    isStudent decimal(10,0)
 );
 
-CREATE TABLE Jobportal.Student (
+CREATE TABLE jobportal.student (
     studentId varchar(255) primary key,
     firstname varchar(255),
     lastname varchar(255),
@@ -16,7 +17,7 @@ CREATE TABLE Jobportal.Student (
     phoneNumber varchar(255)
 );
 
-CREATE TABLE Jobportal.Dashboard (
+CREATE TABLE jobportal.dashboard (
     companyId Integer AUTO_INCREMENT primary key,
     companyName varchar(255),
     jobType varchar(255),
