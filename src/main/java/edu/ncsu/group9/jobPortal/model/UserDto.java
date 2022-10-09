@@ -13,6 +13,15 @@ public class UserDto {
 
     int isStudent;
 
+    public UserDto() {
+    }
+
+    public UserDto(String userId, String userPassword, int isStudent) {
+        this.userId = userId;
+        this.userPassword = userPassword;
+        this.isStudent = isStudent;
+    }
+
     public String getUserId() {
         return userId;
     }
@@ -33,7 +42,7 @@ public class UserDto {
         return isStudent;
     }
 
-    public void setIsStudent(int isStudent) {
-        this.isStudent = isStudent;
-    }
+//    public void setIsStudent(int isStudent) {
+//        this.isStudent = isStudent;
+//    }
 }

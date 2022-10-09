@@ -24,7 +24,6 @@ public class UserDaoTest {
     JdbcTemplate jdbcTemplate;
 
     @InjectMocks
-
     UserDao userDao;
 
     @Test
@@ -80,11 +79,7 @@ public class UserDaoTest {
     }
 
     public UserDto getUserDto(String id, String password, int isStudent) {
-        UserDto user = new UserDto();
-        user.setUserId(id);
-        user.setUserPassword(password);
-        user.setIsStudent(isStudent);
-        return user;
+        return new UserDto(id, password, isStudent);
     }
 
 

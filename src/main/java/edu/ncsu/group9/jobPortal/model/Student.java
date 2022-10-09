@@ -47,6 +47,17 @@ public class Student {
 
     public Student() {}
 
+    public Student(String studentId, String password, String firstName, String lastName, String emailId, String degree, String course, String phoneNumber) {
+        this.studentId = studentId;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.emailId = emailId;
+        this.degree = degree;
+        this.course = course;
+        this.phoneNumber = phoneNumber;
+    }
+
     public String getStudentId() {
         return studentId;
     }

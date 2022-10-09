@@ -1,21 +1,25 @@
 -- Job portal is the schema name
 
+Drop table if exists Jobportal.User;
 CREATE TABLE Jobportal.User (
     userId varchar(255) primary key,
-    userPassword varchar(255)
+    userPassword varchar(255),
+    isStudent Integer
 );
 
+Drop table if exists Jobportal.Student;
 CREATE TABLE Jobportal.Student (
-    studentId varchar(255) primary key,
+    studentId varchar(255),
     firstname varchar(255),
     lastname varchar(255),
     password varchar(255),
     emailId varchar(255),
     degree varchar(255),
     course varchar(255),
-    phoneNumber varchar(255)
+    phone varchar(255)
 );
 
+Drop table if exists Jobportal.Dashboard;
 CREATE TABLE Jobportal.Dashboard (
     companyId Integer AUTO_INCREMENT primary key,
     companyName varchar(255),

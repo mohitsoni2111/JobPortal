@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
@@ -19,10 +20,10 @@ public class UserDao {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    public static final String CHECK_USER_SQL = "SELECT userId, userPassword, isStudent FROM JOBPORTAL.USER WHERE USERID=?";
+//    PasswordEncoder passwordEncoder;
 
+    public static final String CHECK_USER_SQL = "SELECT * FROM JOBPORTAL.USER WHERE USERID=?";
     public static final String INSERT_USER_SQL = "INSERT INTO JOBPORTAL.USER VALUES (?, ?, ?)";
-
     public static final String COORDINATOR_LOGIN_SUCCESSFUL = "COORDINATOR LOGIN SUCCESSFUL";
     public static final String STUDENT_LOGIN_SUCCESSFUL = "STUDENT LOGIN SUCCESSFUL";
     public static final String UNSUCCESSFUL = "LOGIN UNSUCCESSFUL";
@@ -30,22 +31,26 @@ public class UserDao {
 
     public String checkUserRecord(User user) {
         String userId = user.getUserId();
-        UserDto fetchedUser = null;
+        UserDto fetchedUser;
         try {
             fetchedUser = jdbcTemplate.queryForObject(CHECK_USER_SQL, new Object[] { userId }, new BeanPropertyRowMapper<>(UserDto.class));
+            System.out.print("abc");
             if (fetchedUser!=null && fetchedUser.getIsStudent() == 1)
                 return checkStudentCredentials(user, fetchedUser);
             return Objects.isNull(fetchedUser) ? UNSUCCESSFUL : (user.getUserPassword().equals(fetchedUser.getUserPassword())? COORDINATOR_LOGIN_SUCCESSFUL : UNSUCCESSFUL);
+//            return Objects.isNull(fetchedUser) ? UNSUCCESSFUL : ((this.passwordEncoder.matches(user.getUserPassword(), fetchedUser.getUserPassword())) ? COORDINATOR_LOGIN_SUCCESSFUL : UNSUCCESSFUL);
         } catch (EmptyResultDataAccessException exception) {
             log.warn("No user found with userId -> {}", user.getUserId());
         } catch (Exception exception) {
             exception.printStackTrace();
         }
+        System.out.print("not found");
         return UNSUCCESSFUL;
     }
 
     public String checkStudentCredentials(User user, UserDto fetchedUser) {
         return user.getUserPassword().equals(fetchedUser.getUserPassword()) ? STUDENT_LOGIN_SUCCESSFUL: UNSUCCESSFUL;
+//        return (this.passwordEncoder.matches(user.getUserPassword(), fetchedUser.getUserPassword())) ? STUDENT_LOGIN_SUCCESSFUL: UNSUCCESSFUL;
     }
 
     public int addUser(Student student) {
