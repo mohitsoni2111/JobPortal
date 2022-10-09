@@ -41,8 +41,6 @@ public class UserDao {
 //            return Objects.isNull(fetchedUser) ? UNSUCCESSFUL : ((this.passwordEncoder.matches(user.getUserPassword(), fetchedUser.getUserPassword())) ? COORDINATOR_LOGIN_SUCCESSFUL : UNSUCCESSFUL);
         } catch (EmptyResultDataAccessException exception) {
             log.warn("No user found with userId -> {}", user.getUserId());
-        } catch (Exception exception) {
-            exception.printStackTrace();
         }
         System.out.print("not found");
         return UNSUCCESSFUL;

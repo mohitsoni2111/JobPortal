@@ -38,16 +38,6 @@ public class CompanyInfo {
     @ApiModelProperty("Represents uptil when a job seeker can apply")
     private String validity;
 
-    public CompanyInfo(int companyId, String companyName, String jobType, String profileDescription, String streamType, String jobUrl, String validity) {
-        this.companyId = companyId;
-        this.companyName = companyName;
-        this.jobType = jobType;
-        this.profileDescription = profileDescription;
-        this.streamType = streamType;
-        this.jobUrl = jobUrl;
-        this.validity = validity;
-    }
-
     public CompanyInfo() {
     }
 

@@ -22,9 +22,9 @@ public class UserDto {
         this.isStudent = isStudent;
     }
 
-    public String getUserId() {
-        return userId;
-    }
+//    public String getUserId() {
+//        return userId;
+//    }
 
     public void setUserId(String userId) {
         this.userId = userId;
