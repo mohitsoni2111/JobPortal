@@ -1,5 +1,5 @@
 
-|Notes|Evidence|Supported Links|
+|Notes|Evidence(73)|Supported Links|
 |-----|--------|---------------|
 |Video1|3|               |
 |Video2|3|               |
@@ -30,7 +30,7 @@
 |Evidence that the whole team is using the same tools|3||
 |Evidence that the members of the team are working across multiple places in the code base|2||
 |Short release cycles|2|https://github.com/mohitsoni2111/jobPortal/releases|
-|Software Sustainability Evaluation|
+|**Software Sustainability Evaluation**|
 |Name of your software|JobPortal|https://github.com/mohitsoni2111/jobPortal|
 |Does your website and documentation provide a clear, high-level overview of your software?|Yes||
 |Does your website and documentation clearly describe the type of user who should use your software?|Yes||
