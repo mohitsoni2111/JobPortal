@@ -136,6 +136,7 @@ Job Search can be a daunting task and although the availibility of multiple plat
 3. **Job Analysis** - Applicants can be provided with the option to analyse jobs and study their requirements, additionally they can be provided with features will allow them to compare pays for the same position across multiple companies.
 
 4. **Profile Verification** - The next phase will integrate a verification step to ensure that only authorized and verified users are allowed to access the platform, thereby disallowing multiple profile creations.
+5. **OTP and Email Verification** - The next phase will provide a functionality to verify a student by 2-way authentication, i.e., Authentication via OTP and email verification.
 
  
 ## Contributors
