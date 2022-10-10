@@ -11,7 +11,7 @@
 |Issues reports|3|[Issues](https://github.com/mohitsoni2111/jobPortal/issues)|
 |DOI badge|3|[DOI Badge](https://zenodo.org/record/7150956#.Y0Ca2HbMJPY)|
 |Docs: doco generated, format not ugly|3|[GitHub Link](./../documentation/)|
-|Docs: what: point descriptions of each class/function (in isolation)|3||
+|Docs: what: point descriptions of each class/function (in isolation)|3| In GitHub (before each class and function)|
 |Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3| In README.md|
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|In README.md|
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3|In README.md|
