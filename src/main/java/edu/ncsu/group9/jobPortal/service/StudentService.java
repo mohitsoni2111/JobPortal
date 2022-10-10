@@ -10,9 +10,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentService {
 
+    /*
+    This Student service class implements add Student details functions.
+     */
     @Autowired
     StudentDao studentDao;
 
+    /*
+    Function to add new student in the database.
+     */
     public void addStudent(Student student) {
         log.info("Going to insert a student record for {} {}", student.getFirstName(), student.getLastName());
         studentDao.insertStudentRecord(student);

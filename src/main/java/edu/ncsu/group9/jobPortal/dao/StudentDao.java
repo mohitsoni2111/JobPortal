@@ -13,6 +13,10 @@ import java.util.UUID;
 @Service
 public class StudentDao {
 
+    /*
+        StudentDao class that contains functions related to students.
+     */
+
     @Autowired
     JdbcTemplate jdbcTemplate;
 
@@ -20,6 +24,9 @@ public class StudentDao {
 
     public static final String INSERT_STUDENT_SQL = "INSERT INTO JOBPORTAL.STUDENT VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
 
+    /*
+    This function insert a student detail.
+     */
     public int insertStudentRecord(Student student) {
         int rows = 0;
         try {

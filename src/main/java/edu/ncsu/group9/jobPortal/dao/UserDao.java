@@ -17,6 +17,10 @@ import java.util.Objects;
 @Service
 public class UserDao {
 
+    /*
+        UserDao class that contains functions related to users.
+     */
+
     @Autowired
     JdbcTemplate jdbcTemplate;
 
@@ -28,7 +32,9 @@ public class UserDao {
     public static final String STUDENT_LOGIN_SUCCESSFUL = "STUDENT LOGIN SUCCESSFUL";
     public static final String UNSUCCESSFUL = "LOGIN UNSUCCESSFUL";
 
-
+    /*
+    This function checks user record in the database.
+     */
     public String checkUserRecord(User user) {
         String userId = user.getUserId();
         UserDto fetchedUser;
@@ -46,11 +52,17 @@ public class UserDao {
         return UNSUCCESSFUL;
     }
 
+    /*
+    This function checks whether user password matches with the fetched data from database.
+     */
     public String checkStudentCredentials(User user, UserDto fetchedUser) {
         return user.getUserPassword().equals(fetchedUser.getUserPassword()) ? STUDENT_LOGIN_SUCCESSFUL: UNSUCCESSFUL;
 //        return (this.passwordEncoder.matches(user.getUserPassword(), fetchedUser.getUserPassword())) ? STUDENT_LOGIN_SUCCESSFUL: UNSUCCESSFUL;
     }
 
+    /*
+    This function insert a new user details.
+     */
     public int addUser(Student student) {
         int rows = 0;
         try {
