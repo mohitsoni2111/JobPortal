@@ -30,11 +30,18 @@ alt="License" src="https://img.shields.io/github/license/mohitsoni2111/jobPortal
    - [Phase 2](#phase-2)
 7. [Contributors](#contributors)
 
+
+
 ## About
 
 "JobPortal" is a web application for students to find all the job listings at one place instead of going through a bunch of different websites for the same. Coordinators can post new job listing which can be viewed by the students.
 
 ## Application Preview
+
+### Demonstration Video
+https://user-images.githubusercontent.com/50794731/194788576-9d0ba593-b93a-4837-850e-71d28d2cf067.mp4
+
+
 ### Student Registration Page
 <img width="1200"  src="/images/studentregistration.png">
 
