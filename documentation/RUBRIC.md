@@ -4,17 +4,17 @@
 |Notes|Self Assessment|Evidence|
 |-----|-|---------|
 |Video1|-|       N/A       |
-|Video2|3|     [Demo video](https://drive.google.com/file/d/1HqvInvVd4BRZCU7ygsuMz6vutRqEJ1RU/view?usp=sharing)          |
+|Video2|3|     [Demo video](https://drive.google.com/file/d/1HqvInvVd4BRZCU7ygsuMz6vutRqEJ1RU/view?usp=sharing) (Also in README.md)        |
 |Workload is spread over the whole team|3|[GitHub Link](https://github.com/mohitsoni2111/jobPortal/pulse)|
 |Number of commits|3|[GitHub Link](https://github.com/mohitsoni2111/jobPortal)|
 |Number of commits: by different people|3|[GitHub Link](https://github.com/mohitsoni2111/jobPortal/pulse)|
 |Issues reports|3|[Issues](https://github.com/mohitsoni2111/jobPortal/issues)|
 |DOI badge|3|[DOI Badge](https://zenodo.org/record/7150956#.Y0Ca2HbMJPY)|
 |Docs: doco generated, format not ugly|3|[GitHub Link](./../documentation/)|
-|Docs: what: point descriptions of each class/function (in isolation)|3||
+|Docs: what: point descriptions of each class/function (in isolation)|3| In GitHub (before each class and function)|
 |Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|3| In README.md|
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|3|In README.md|
-|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3|In README.md|
+|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3| [Video](https://drive.google.com/file/d/1GLLvs6k12bssTbQBKRuQIUY1G86_IXlD/view?usp=sharing) (Also in README.md)|
 |Use of version control tools|3|Using GitHub|
 |Use of style checkers|3|Using [standard JS](https://standardjs.com/): evidence of installed module in [package.json](./../angular/app/package.json)|
 |Use of code formatters|3|Using [Prettier](./../angular/app/.prettierrc.json) for front-end <br>Using Intellij IDEA using `ctrl + alt + J` for back-end|
