@@ -1,7 +1,6 @@
 package edu.ncsu.group9.jobPortal.controller;
 
 import edu.ncsu.group9.jobPortal.dao.UserDao;
-import edu.ncsu.group9.jobPortal.model.CompanyInfo;
 import edu.ncsu.group9.jobPortal.model.Student;
 import edu.ncsu.group9.jobPortal.service.StudentService;
 import io.swagger.annotations.ApiOperation;

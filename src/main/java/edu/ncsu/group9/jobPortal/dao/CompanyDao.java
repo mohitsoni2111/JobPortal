@@ -19,15 +19,25 @@ import java.util.List;
 @Service
 public class CompanyDao {
 
+    /*
+        CompanyDao class that contains functions related to companies.
+     */
+
     public static final String INSERT_COMPANY_SQL = "INSERT INTO JOBPORTAL.DASHBOARD(companyName, jobType, profileDescription, streamType, jobUrl, validity) VALUES (?, ?, ?, ?, ?, ?);";
     public static final String GET_VALID_COMPANY_SQL = "SELECT * FROM JOBPORTAL.DASHBOARD WHERE VALIDITY >= ?";
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+    /*
+    Constructor to use jdbcTemplate.
+     */
     public CompanyDao(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    /*
+    This function insert a company detail.
+     */
     public int insertCompanyDetails(CompanyInfo companyInfo) {
         int rows = 0;
         try {
@@ -40,6 +50,9 @@ public class CompanyDao {
         return rows;
     }
 
+    /*
+    This function returns list of all valid companies.
+     */
     public List<CompanyInfo> getValidCompanies() {
         List<CompanyInfo> companyList = new ArrayList<>();
         try {
@@ -72,5 +85,4 @@ public class CompanyDao {
         }
         return companyList;
     }
-
 }

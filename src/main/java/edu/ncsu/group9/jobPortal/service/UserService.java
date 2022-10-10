@@ -11,9 +11,17 @@ import org.springframework.stereotype.Service;
 @Log4j2
 @Service
 public class UserService {
+
+    /*
+    This User service class checks is user is present in the database or not.
+     */
+
     @Autowired
     UserDao userDao;
 
+    /*
+    Function to check whether user is present in the database or not.
+     */
     public String checkUser(User user) {
         log.info("Checking the user record for {}", user.getUserId());
         return userDao.checkUserRecord(user);
